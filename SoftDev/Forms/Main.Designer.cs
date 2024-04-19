@@ -66,6 +66,7 @@
             this.AdminButton.TabIndex = 4;
             this.AdminButton.Text = "Админ";
             this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // ExitButton
             // 

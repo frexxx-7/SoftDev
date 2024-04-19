@@ -25,7 +25,7 @@ namespace SoftDev.Forms.AddForms
 
             if (idRequest != null)
             {
-                label1.Text = "Изменить комплектующее";
+                label1.Text = "Изменить заявку";
                 AddButton.Text = "Изменить";
                 loadInfoRequest();
             }
@@ -135,7 +135,7 @@ namespace SoftDev.Forms.AddForms
                 try
                 {
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Заявка добавлен");
+                    MessageBox.Show("Заявка добавлена");
                     this.Close();
                 }
                 catch
@@ -157,7 +157,7 @@ namespace SoftDev.Forms.AddForms
                 try
                 {
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Компьютер изменен");
+                    MessageBox.Show("Заявка изменена");
                     this.Close();
                 }
                 catch
@@ -167,6 +167,11 @@ namespace SoftDev.Forms.AddForms
 
                 db.closeConnection();
             }
+        }
+
+        private void AddRequest_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

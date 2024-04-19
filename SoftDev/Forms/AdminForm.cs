@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftDev.Forms.AdminForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,16 @@ namespace SoftDev.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             new Requests().Show();
+        }
+
+        private void ClientsButton_Click(object sender, EventArgs e)
+        {
+            new Clients().Show();
+        }
+
+        private void ReferenceButton_Click(object sender, EventArgs e)
+        {
+            new References().Show();
             this.Hide();
         }
     }

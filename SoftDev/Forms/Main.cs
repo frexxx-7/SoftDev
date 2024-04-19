@@ -27,7 +27,11 @@ namespace SoftDev.Forms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+        }
 
+        private void AdminButton_Click(object sender, EventArgs e)
+        {
+            new AdminForm().Show();
         }
 
         public Main()

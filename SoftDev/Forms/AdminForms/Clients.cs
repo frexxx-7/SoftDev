@@ -11,34 +11,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SoftDev.Forms
+namespace SoftDev.Forms.AdminForms
 {
-    public partial class Requests : Form
+    public partial class Clients : Form
     {
-        public Requests()
+        public delegate void LoadInfoClient();
+        private LoadInfoClient lic;
+        public Clients()
         {
             InitializeComponent();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            new AddRequest(null).Show();
+            new AddClient(null, lic).Show();
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            new AddRequest(RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value.ToString()).Show();
+            new AddClient(ClientDataGridView[0, ClientDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lic).Show();
         }
 
-        private void loadInfoRequestsFromDB()
+        private void loadInfoClientsFromDB()
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            ClientDataGridView.Rows.Clear();
 
-            string query = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient "+
-                $"join project on project.id = requests.idProject ";
+            string query = $"select client.id, client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo from client " +
+                $"join address on address.id = client.idAddress ";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -57,21 +58,20 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    ClientDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
-
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"delete from requests where id = {RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"delete from client where id = {ClientDataGridView[0, ClientDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
             db.openConnection();
 
             try
             {
                 command.ExecuteNonQuery();
-                MessageBox.Show("Заявка удалена");
+                MessageBox.Show("Клиент удален");
 
             }
             catch
@@ -80,19 +80,18 @@ namespace SoftDev.Forms
             }
 
             db.closeConnection();
-            loadInfoRequestsFromDB();
+            loadInfoClientsFromDB();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            ClientDataGridView.Rows.Clear();
 
-            string searchString = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient " +
-                $"join project on project.id = requests.idProject " +
-                $"where concat (requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic), project.name, requests.dateCreate, requests.state) like '%" + SearchTextBox.Text + "%'";
+            string searchString = $"select client.id, client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo from client " +
+                $"join address on address.id = client.idAddress " +
+                $"where concat (client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house)) like '%" + SearchTextBox.Text + "%'";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(searchString, db.getConnection()))
@@ -111,7 +110,7 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    ClientDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
@@ -119,6 +118,12 @@ namespace SoftDev.Forms
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void Clients_Load(object sender, EventArgs e)
+        {
+            loadInfoClientsFromDB();
+            lic = loadInfoClientsFromDB;
         }
     }
 }

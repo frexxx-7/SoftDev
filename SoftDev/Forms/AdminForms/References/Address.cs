@@ -13,32 +13,27 @@ using System.Windows.Forms;
 
 namespace SoftDev.Forms
 {
-    public partial class Requests : Form
+    public partial class Address : Form
     {
-        public Requests()
+        public delegate void LoadInfoAddress();
+        private LoadInfoAddress lia;
+        public Address()
         {
             InitializeComponent();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-            new AddRequest(null).Show();
+            this.Hide();
         }
 
-        private void EditButton_Click(object sender, EventArgs e)
-        {
-            new AddRequest(RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value.ToString()).Show();
-        }
-
-        private void loadInfoRequestsFromDB()
+        private void loadInfoAddress()
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            AddressDataGridView.Rows.Clear();
 
-            string query = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient "+
-                $"join project on project.id = requests.idProject ";
+            string query = $"select * from address";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -57,7 +52,7 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    AddressDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
@@ -65,13 +60,13 @@ namespace SoftDev.Forms
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"delete from requests where id = {RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"delete from address where id = {AddressDataGridView[0, AddressDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
             db.openConnection();
 
             try
             {
                 command.ExecuteNonQuery();
-                MessageBox.Show("Заявка удалена");
+                MessageBox.Show("Адрес удален");
 
             }
             catch
@@ -80,19 +75,27 @@ namespace SoftDev.Forms
             }
 
             db.closeConnection();
-            loadInfoRequestsFromDB();
+            loadInfoAddress();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            new AddAddress(null, lia).Show();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            new AddAddress(AddressDataGridView[0, AddressDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lia).Show();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            AddressDataGridView.Rows.Clear();
 
-            string searchString = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient " +
-                $"join project on project.id = requests.idProject " +
-                $"where concat (requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic), project.name, requests.dateCreate, requests.state) like '%" + SearchTextBox.Text + "%'";
+            string searchString = $"select * from address " +
+                $"where concat (country, city, street, house) like '%" + SearchTextBox.Text + "%'";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(searchString, db.getConnection()))
@@ -111,14 +114,15 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    AddressDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        private void Address_Load(object sender, EventArgs e)
         {
-            this.Hide();
+            loadInfoAddress();
+            lia = loadInfoAddress;
         }
     }
 }
