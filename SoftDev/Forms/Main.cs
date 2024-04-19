@@ -19,10 +19,15 @@ namespace SoftDev.Forms
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
-            new Requests().Show();
             this.Hide();
+            new Autorization().Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         public Main()
