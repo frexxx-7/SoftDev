@@ -175,7 +175,6 @@
             this.Name = "AddRequest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавить заявку";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddRequest_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

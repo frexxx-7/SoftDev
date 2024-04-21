@@ -222,6 +222,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заявки";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Requests_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RequestDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

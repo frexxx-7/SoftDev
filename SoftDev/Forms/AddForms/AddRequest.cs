@@ -15,7 +15,8 @@ namespace SoftDev.Forms.AddForms
     public partial class AddRequest : Form
     {
         private string idRequest;
-        public AddRequest(string idRequest)
+        private Requests.LoadInfoRequests lir;
+        public AddRequest(string idRequest, Requests.LoadInfoRequests lir)
         {
             InitializeComponent();
             this.idRequest = idRequest;
@@ -29,6 +30,8 @@ namespace SoftDev.Forms.AddForms
                 AddButton.Text = "Изменить";
                 loadInfoRequest();
             }
+
+            this.lir = lir;
         }
         private void loadInfoClient()
         {
@@ -46,7 +49,6 @@ namespace SoftDev.Forms.AddForms
                 item.Value = reader[0];
                 ClientComboBox.Items.Add(item);
             }
-            reader.Close();
             reader.Close();
 
             db.closeConnection();
@@ -68,7 +70,6 @@ namespace SoftDev.Forms.AddForms
                 item.Value = reader[0];
                 ProjectComboBox.Items.Add(item);
             }
-            reader.Close();
             reader.Close();
 
             db.closeConnection();
@@ -136,6 +137,7 @@ namespace SoftDev.Forms.AddForms
                 {
                     command.ExecuteNonQuery();
                     MessageBox.Show("Заявка добавлена");
+                    lir();
                     this.Close();
                 }
                 catch
@@ -158,6 +160,7 @@ namespace SoftDev.Forms.AddForms
                 {
                     command.ExecuteNonQuery();
                     MessageBox.Show("Заявка изменена");
+                    lir();
                     this.Close();
                 }
                 catch
@@ -167,11 +170,6 @@ namespace SoftDev.Forms.AddForms
 
                 db.closeConnection();
             }
-        }
-
-        private void AddRequest_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

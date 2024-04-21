@@ -13,32 +13,29 @@ using System.Windows.Forms;
 
 namespace SoftDev.Forms
 {
-    public partial class Requests : Form
+    public partial class Developers : Form
     {
-        public Requests()
+        public delegate void LoadInfoDevelopers();
+        private LoadInfoDevelopers lid;
+        public Developers()
         {
             InitializeComponent();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private void Developers_Load(object sender, EventArgs e)
         {
-            new AddRequest(null).Show();
+            lid = loadInfoDevelopers;
+            loadInfoDevelopers();
         }
 
-        private void EditButton_Click(object sender, EventArgs e)
-        {
-            new AddRequest(RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value.ToString()).Show();
-        }
-
-        private void loadInfoRequestsFromDB()
+        private void loadInfoDevelopers()
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            DevelopersDataGridView.Rows.Clear();
 
-            string query = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient "+
-                $"join project on project.id = requests.idProject ";
+            string query = $"select developers.id, developers.surname, developers.name, developers.patronymic,  concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo, developers.skills from developers " +
+                $"join address on address.id = developers.idAddress ";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -57,21 +54,31 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    DevelopersDataGridView.Rows.Add(s);
             }
             db.closeConnection();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            new AddDeveloper(null, lid).Show();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            new AddDeveloper(DevelopersDataGridView[0, DevelopersDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lid).Show();
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"delete from requests where id = {RequestDataGridView[0, RequestDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"delete from developers where id = {DevelopersDataGridView[0, DevelopersDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
             db.openConnection();
 
             try
             {
                 command.ExecuteNonQuery();
-                MessageBox.Show("Заявка удалена");
+                MessageBox.Show("Разработчик удален");
 
             }
             catch
@@ -80,19 +87,18 @@ namespace SoftDev.Forms
             }
 
             db.closeConnection();
-            loadInfoRequestsFromDB();
+            loadInfoDevelopers();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
 
-            RequestDataGridView.Rows.Clear();
+            DevelopersDataGridView.Rows.Clear();
 
-            string searchString = $"select requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic) as FIOClient, project.name, requests.dateCreate, requests.state from requests " +
-                $"join client on client.id = requests.idClient " +
-                $"join project on project.id = requests.idProject " +
-                $"where concat (requests.id, concat(client.surname, ' ', client.name, ' ', client.patronymic), project.name, requests.dateCreate, requests.state) like '%" + SearchTextBox.Text + "%'";
+            string searchString = $"select developers.id, developers.surname, developers.name, developers.patronymic,  concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo, developers.skills from developers " +
+                $"join address on address.id = developers.idAddress " +
+                $"where concat (developers.surname, developers.name, developers.patronymic, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house), developers.skills) like '%" + SearchTextBox.Text + "%'";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(searchString, db.getConnection()))
@@ -111,7 +117,7 @@ namespace SoftDev.Forms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    RequestDataGridView.Rows.Add(s);
+                    DevelopersDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }

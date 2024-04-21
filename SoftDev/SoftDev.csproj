@@ -65,11 +65,29 @@
     <Compile Include="Forms\AddForms\AddClient.Designer.cs">
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddForms\AddDeveloper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddDeveloper.Designer.cs">
+      <DependentUpon>AddDeveloper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddForms\AddRequest.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddForms\AddRequest.Designer.cs">
       <DependentUpon>AddRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminForms\References.cs">
       <SubType>Form</SubType>
@@ -101,6 +119,12 @@
     <Compile Include="Forms\Autorization.Designer.cs">
       <DependentUpon>Autorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminForms\Developers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Developers.Designer.cs">
+      <DependentUpon>Developers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,10 +137,10 @@
     <Compile Include="Forms\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Requests.cs">
+    <Compile Include="Forms\AdminForms\Requests.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Requests.Designer.cs">
+    <Compile Include="Forms\AdminForms\Requests.Designer.cs">
       <DependentUpon>Requests.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -127,8 +151,17 @@
     <EmbeddedResource Include="Forms\AddForms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddDeveloper.resx">
+      <DependentUpon>AddDeveloper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddForms\AddRequest.resx">
       <DependentUpon>AddRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\References.resx">
       <DependentUpon>References.cs</DependentUpon>
@@ -145,13 +178,16 @@
     <EmbeddedResource Include="Forms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\Developers.resx">
+      <DependentUpon>Developers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Requests.resx">
+    <EmbeddedResource Include="Forms\AdminForms\Requests.resx">
       <DependentUpon>Requests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

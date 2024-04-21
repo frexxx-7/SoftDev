@@ -32,15 +32,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ClientsButton = new System.Windows.Forms.Button();
             this.ReferenceButton = new System.Windows.Forms.Button();
+            this.DevelopersButton = new System.Windows.Forms.Button();
+            this.ProjectsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RequestsButton
             // 
             this.RequestsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.RequestsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RequestsButton.Location = new System.Drawing.Point(158, 98);
+            this.RequestsButton.Location = new System.Drawing.Point(148, 89);
             this.RequestsButton.Name = "RequestsButton";
-            this.RequestsButton.Size = new System.Drawing.Size(133, 44);
+            this.RequestsButton.Size = new System.Drawing.Size(143, 44);
             this.RequestsButton.TabIndex = 0;
             this.RequestsButton.Text = "Заявки";
             this.RequestsButton.UseVisualStyleBackColor = true;
@@ -62,9 +64,9 @@
             // 
             this.ClientsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ClientsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClientsButton.Location = new System.Drawing.Point(158, 184);
+            this.ClientsButton.Location = new System.Drawing.Point(151, 174);
             this.ClientsButton.Name = "ClientsButton";
-            this.ClientsButton.Size = new System.Drawing.Size(133, 44);
+            this.ClientsButton.Size = new System.Drawing.Size(140, 44);
             this.ClientsButton.TabIndex = 11;
             this.ClientsButton.Text = "Клиенты";
             this.ClientsButton.UseVisualStyleBackColor = true;
@@ -74,19 +76,45 @@
             // 
             this.ReferenceButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ReferenceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ReferenceButton.Location = new System.Drawing.Point(158, 501);
+            this.ReferenceButton.Location = new System.Drawing.Point(151, 501);
             this.ReferenceButton.Name = "ReferenceButton";
-            this.ReferenceButton.Size = new System.Drawing.Size(133, 44);
+            this.ReferenceButton.Size = new System.Drawing.Size(140, 44);
             this.ReferenceButton.TabIndex = 12;
             this.ReferenceButton.Text = "Справочники";
             this.ReferenceButton.UseVisualStyleBackColor = true;
             this.ReferenceButton.Click += new System.EventHandler(this.ReferenceButton_Click);
+            // 
+            // DevelopersButton
+            // 
+            this.DevelopersButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DevelopersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DevelopersButton.Location = new System.Drawing.Point(151, 253);
+            this.DevelopersButton.Name = "DevelopersButton";
+            this.DevelopersButton.Size = new System.Drawing.Size(143, 44);
+            this.DevelopersButton.TabIndex = 13;
+            this.DevelopersButton.Text = "Разработчики";
+            this.DevelopersButton.UseVisualStyleBackColor = true;
+            this.DevelopersButton.Click += new System.EventHandler(this.DevelopersButton_Click);
+            // 
+            // ProjectsButton
+            // 
+            this.ProjectsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ProjectsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProjectsButton.Location = new System.Drawing.Point(151, 335);
+            this.ProjectsButton.Name = "ProjectsButton";
+            this.ProjectsButton.Size = new System.Drawing.Size(143, 44);
+            this.ProjectsButton.TabIndex = 14;
+            this.ProjectsButton.Text = "Проекты";
+            this.ProjectsButton.UseVisualStyleBackColor = true;
+            this.ProjectsButton.Click += new System.EventHandler(this.ProjectsButton_Click);
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 557);
+            this.Controls.Add(this.ProjectsButton);
+            this.Controls.Add(this.DevelopersButton);
             this.Controls.Add(this.ReferenceButton);
             this.Controls.Add(this.ClientsButton);
             this.Controls.Add(this.label1);
@@ -105,5 +133,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ClientsButton;
         private System.Windows.Forms.Button ReferenceButton;
+        private System.Windows.Forms.Button DevelopersButton;
+        private System.Windows.Forms.Button ProjectsButton;
     }
 }

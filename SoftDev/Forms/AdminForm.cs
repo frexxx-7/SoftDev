@@ -33,5 +33,17 @@ namespace SoftDev.Forms
             new References().Show();
             this.Hide();
         }
+
+        private void DevelopersButton_Click(object sender, EventArgs e)
+        {
+            new Developers().Show();
+            this.Hide();
+        }
+
+        private void ProjectsButton_Click(object sender, EventArgs e)
+        {
+            new Projects().Show();
+            this.Hide();
+        }
     }
 }
