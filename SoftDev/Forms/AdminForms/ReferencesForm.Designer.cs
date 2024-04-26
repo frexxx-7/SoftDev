@@ -1,6 +1,6 @@
 ﻿namespace SoftDev.Forms.AdminForms
 {
-    partial class References
+    partial class ReferencesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.RequestsButton = new System.Windows.Forms.Button();
+            this.TechnologiesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,14 +57,27 @@
             this.RequestsButton.UseVisualStyleBackColor = true;
             this.RequestsButton.Click += new System.EventHandler(this.RequestsButton_Click);
             // 
-            // References
+            // TechnologiesButton
+            // 
+            this.TechnologiesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TechnologiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TechnologiesButton.Location = new System.Drawing.Point(174, 191);
+            this.TechnologiesButton.Name = "TechnologiesButton";
+            this.TechnologiesButton.Size = new System.Drawing.Size(150, 44);
+            this.TechnologiesButton.TabIndex = 13;
+            this.TechnologiesButton.Text = "Технологии";
+            this.TechnologiesButton.UseVisualStyleBackColor = true;
+            this.TechnologiesButton.Click += new System.EventHandler(this.TechnologiesButton_Click);
+            // 
+            // ReferencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 552);
+            this.Controls.Add(this.TechnologiesButton);
             this.Controls.Add(this.RequestsButton);
             this.Controls.Add(this.label1);
-            this.Name = "References";
+            this.Name = "ReferencesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Справочники";
             this.ResumeLayout(false);
@@ -75,5 +89,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RequestsButton;
+        private System.Windows.Forms.Button TechnologiesButton;
     }
 }

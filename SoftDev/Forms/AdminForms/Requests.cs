@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace SoftDev.Forms
 {
@@ -127,6 +128,40 @@ namespace SoftDev.Forms
         {
             lir = loadInfoRequestsFromDB;
             loadInfoRequestsFromDB();
+        }
+
+        private void OutputButton_Click(object sender, EventArgs e)
+        {
+            Excel.Application excelApp = new Excel.Application();
+            Excel.Workbook workbook = excelApp.Workbooks.Add();
+            Excel.Worksheet worksheet = workbook.ActiveSheet;
+            for (int j = 0; j < RequestDataGridView.Columns.Count; j++)
+            {
+                if (RequestDataGridView.Columns[j].Visible)
+                {
+                    worksheet.Cells[1, j] = RequestDataGridView.Columns[j].HeaderText;
+                }
+            }
+            for (int i = 0; i < RequestDataGridView.Rows.Count; i++)
+            {
+                for (int j = 0; j < RequestDataGridView.Columns.Count; j++)
+                {
+                    if (RequestDataGridView.Columns[j].Visible)
+                    {
+                        worksheet.Cells[i + 2, j] = RequestDataGridView.Rows[i].Cells[j].Value;
+                    }
+                }
+            }
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Excel File|*.xlsx";
+            saveFileDialog1.Title = "Сохранить Excel файл";
+            saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName != "")
+            {
+                workbook.SaveAs(saveFileDialog1.FileName);
+            }
+            workbook.Close();
+            excelApp.Quit();
         }
     }
 }

@@ -42,7 +42,7 @@
             // LoginTextBox
             // 
             this.LoginTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LoginTextBox.Location = new System.Drawing.Point(137, 108);
+            this.LoginTextBox.Location = new System.Drawing.Point(206, 108);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(401, 22);
             this.LoginTextBox.TabIndex = 8;
@@ -53,7 +53,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(5, 100);
+            this.label2.Location = new System.Drawing.Point(57, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 29);
             this.label2.TabIndex = 7;
@@ -65,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(192, 32);
+            this.label1.Location = new System.Drawing.Point(261, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 29);
             this.label1.TabIndex = 9;
@@ -88,7 +88,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(5, 180);
+            this.label3.Location = new System.Drawing.Point(57, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 29);
             this.label3.TabIndex = 15;
@@ -97,7 +97,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PasswordTextBox.Location = new System.Drawing.Point(137, 188);
+            this.PasswordTextBox.Location = new System.Drawing.Point(206, 188);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(401, 22);
             this.PasswordTextBox.TabIndex = 14;
@@ -108,7 +108,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(5, 255);
+            this.label4.Location = new System.Drawing.Point(57, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(242, 29);
             this.label4.TabIndex = 17;
@@ -117,7 +117,7 @@
             // RepeatPasswordTextBox
             // 
             this.RepeatPasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.RepeatPasswordTextBox.Location = new System.Drawing.Point(262, 262);
+            this.RepeatPasswordTextBox.Location = new System.Drawing.Point(331, 262);
             this.RepeatPasswordTextBox.Name = "RepeatPasswordTextBox";
             this.RepeatPasswordTextBox.Size = new System.Drawing.Size(276, 22);
             this.RepeatPasswordTextBox.TabIndex = 16;
@@ -125,7 +125,7 @@
             // RegistrationButton
             // 
             this.RegistrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RegistrationButton.Location = new System.Drawing.Point(184, 468);
+            this.RegistrationButton.Location = new System.Drawing.Point(256, 471);
             this.RegistrationButton.Name = "RegistrationButton";
             this.RegistrationButton.Size = new System.Drawing.Size(156, 41);
             this.RegistrationButton.TabIndex = 18;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 534);
+            this.ClientSize = new System.Drawing.Size(688, 534);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RepeatPasswordTextBox);

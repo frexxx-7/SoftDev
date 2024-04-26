@@ -1,6 +1,6 @@
-﻿namespace SoftDev.Forms.AdminForms
+﻿namespace SoftDev.Forms.AdminForms.References
 {
-    partial class Projects
+    partial class Technologies
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.OutputButton = new System.Windows.Forms.Button();
@@ -38,19 +38,17 @@
             this.EditButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ProjectsDataGridView = new System.Windows.Forms.DataGridView();
+            this.TechnologiesDataGridView = new System.Windows.Forms.DataGridView();
+            this.BackButton = new System.Windows.Forms.Button();
             this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BackButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TechnologiesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchTextBox
             // 
             this.SearchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.SearchTextBox.Location = new System.Drawing.Point(265, 475);
+            this.SearchTextBox.Location = new System.Drawing.Point(346, 485);
             this.SearchTextBox.Name = "SearchTextBox";
             this.SearchTextBox.Size = new System.Drawing.Size(366, 22);
             this.SearchTextBox.TabIndex = 62;
@@ -59,7 +57,7 @@
             // 
             this.SearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchButton.Location = new System.Drawing.Point(637, 456);
+            this.SearchButton.Location = new System.Drawing.Point(718, 475);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(117, 41);
             this.SearchButton.TabIndex = 61;
@@ -71,19 +69,18 @@
             // 
             this.OutputButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.OutputButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OutputButton.Location = new System.Drawing.Point(798, 242);
+            this.OutputButton.Location = new System.Drawing.Point(824, 242);
             this.OutputButton.Name = "OutputButton";
             this.OutputButton.Size = new System.Drawing.Size(117, 41);
             this.OutputButton.TabIndex = 60;
             this.OutputButton.Text = "Вывод";
             this.OutputButton.UseVisualStyleBackColor = true;
-            this.OutputButton.Click += new System.EventHandler(this.OutputButton_Click);
             // 
             // DeleteButton
             // 
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteButton.Location = new System.Drawing.Point(798, 162);
+            this.DeleteButton.Location = new System.Drawing.Point(824, 162);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(117, 41);
             this.DeleteButton.TabIndex = 59;
@@ -95,7 +92,7 @@
             // 
             this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EditButton.Location = new System.Drawing.Point(798, 84);
+            this.EditButton.Location = new System.Drawing.Point(824, 84);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(117, 41);
             this.EditButton.TabIndex = 58;
@@ -107,7 +104,7 @@
             // 
             this.AddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddButton.Location = new System.Drawing.Point(798, 12);
+            this.AddButton.Location = new System.Drawing.Point(824, 12);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(117, 41);
             this.AddButton.TabIndex = 57;
@@ -121,70 +118,43 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(377, 27);
+            this.label1.Location = new System.Drawing.Point(374, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 29);
+            this.label1.Size = new System.Drawing.Size(158, 29);
             this.label1.TabIndex = 56;
-            this.label1.Text = "Проекты";
+            this.label1.Text = "Технологии";
             // 
-            // ProjectsDataGridView
+            // TechnologiesDataGridView
             // 
-            this.ProjectsDataGridView.AllowUserToAddRows = false;
-            this.ProjectsDataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProjectsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.ProjectsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TechnologiesDataGridView.AllowUserToAddRows = false;
+            this.TechnologiesDataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TechnologiesDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            this.TechnologiesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProjectsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ProjectsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.ProjectsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProjectsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TechnologiesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TechnologiesDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.TechnologiesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TechnologiesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDocrors,
-            this.NameColumn,
-            this.Description,
-            this.StateColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProjectsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.ProjectsDataGridView.Location = new System.Drawing.Point(12, 87);
-            this.ProjectsDataGridView.Name = "ProjectsDataGridView";
-            this.ProjectsDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProjectsDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.ProjectsDataGridView.RowTemplate.Height = 24;
-            this.ProjectsDataGridView.Size = new System.Drawing.Size(739, 333);
-            this.ProjectsDataGridView.TabIndex = 55;
-            // 
-            // idDocrors
-            // 
-            this.idDocrors.HeaderText = "id";
-            this.idDocrors.MinimumWidth = 6;
-            this.idDocrors.Name = "idDocrors";
-            this.idDocrors.Visible = false;
-            // 
-            // NameColumn
-            // 
-            this.NameColumn.HeaderText = "Название";
-            this.NameColumn.MinimumWidth = 6;
-            this.NameColumn.Name = "NameColumn";
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Описание";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            // 
-            // StateColumn
-            // 
-            this.StateColumn.HeaderText = "Состояние";
-            this.StateColumn.MinimumWidth = 6;
-            this.StateColumn.Name = "StateColumn";
+            this.NameColumn});
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TechnologiesDataGridView.DefaultCellStyle = dataGridViewCellStyle23;
+            this.TechnologiesDataGridView.Location = new System.Drawing.Point(12, 87);
+            this.TechnologiesDataGridView.Name = "TechnologiesDataGridView";
+            this.TechnologiesDataGridView.RowHeadersWidth = 51;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TechnologiesDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            this.TechnologiesDataGridView.RowTemplate.Height = 24;
+            this.TechnologiesDataGridView.Size = new System.Drawing.Size(786, 343);
+            this.TechnologiesDataGridView.TabIndex = 55;
             // 
             // BackButton
             // 
@@ -197,11 +167,24 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // Projects
+            // idDocrors
+            // 
+            this.idDocrors.HeaderText = "id";
+            this.idDocrors.MinimumWidth = 6;
+            this.idDocrors.Name = "idDocrors";
+            this.idDocrors.Visible = false;
+            // 
+            // NameColumn
+            // 
+            this.NameColumn.HeaderText = "Имя";
+            this.NameColumn.MinimumWidth = 6;
+            this.NameColumn.Name = "NameColumn";
+            // 
+            // Technologies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 509);
+            this.ClientSize = new System.Drawing.Size(953, 528);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.OutputButton);
@@ -209,14 +192,14 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ProjectsDataGridView);
+            this.Controls.Add(this.TechnologiesDataGridView);
             this.Controls.Add(this.BackButton);
-            this.Name = "Projects";
+            this.Name = "Technologies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Проекты";
+            this.Text = "Технологии";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Projects_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectsDataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.Technologies_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.TechnologiesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,11 +214,9 @@
         private System.Windows.Forms.Button EditButton;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView ProjectsDataGridView;
+        private System.Windows.Forms.DataGridView TechnologiesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDocrors;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StateColumn;
         private System.Windows.Forms.Button BackButton;
     }
 }

@@ -34,6 +34,7 @@
             this.ReferenceButton = new System.Windows.Forms.Button();
             this.DevelopersButton = new System.Windows.Forms.Button();
             this.ProjectsButton = new System.Windows.Forms.Button();
+            this.TaskButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RequestsButton
@@ -76,7 +77,7 @@
             // 
             this.ReferenceButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ReferenceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ReferenceButton.Location = new System.Drawing.Point(151, 501);
+            this.ReferenceButton.Location = new System.Drawing.Point(151, 587);
             this.ReferenceButton.Name = "ReferenceButton";
             this.ReferenceButton.Size = new System.Drawing.Size(140, 44);
             this.ReferenceButton.TabIndex = 12;
@@ -108,11 +109,24 @@
             this.ProjectsButton.UseVisualStyleBackColor = true;
             this.ProjectsButton.Click += new System.EventHandler(this.ProjectsButton_Click);
             // 
+            // TaskButton
+            // 
+            this.TaskButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TaskButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TaskButton.Location = new System.Drawing.Point(151, 414);
+            this.TaskButton.Name = "TaskButton";
+            this.TaskButton.Size = new System.Drawing.Size(143, 44);
+            this.TaskButton.TabIndex = 15;
+            this.TaskButton.Text = "Задачи";
+            this.TaskButton.UseVisualStyleBackColor = true;
+            this.TaskButton.Click += new System.EventHandler(this.TaskButton_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 557);
+            this.ClientSize = new System.Drawing.Size(451, 643);
+            this.Controls.Add(this.TaskButton);
             this.Controls.Add(this.ProjectsButton);
             this.Controls.Add(this.DevelopersButton);
             this.Controls.Add(this.ReferenceButton);
@@ -135,5 +149,6 @@
         private System.Windows.Forms.Button ReferenceButton;
         private System.Windows.Forms.Button DevelopersButton;
         private System.Windows.Forms.Button ProjectsButton;
+        private System.Windows.Forms.Button TaskButton;
     }
 }

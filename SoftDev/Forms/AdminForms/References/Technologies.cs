@@ -10,31 +10,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 
-namespace SoftDev.Forms.AdminForms
+namespace SoftDev.Forms.AdminForms.References
 {
-    public partial class Projects : Form
+    public partial class Technologies : Form
     {
-        public delegate void LoadInfoProject();
-        private LoadInfoProject lip;
-        public Projects()
+        public delegate void LoadInfoTechnologies();
+        private LoadInfoTechnologies lit;
+        public Technologies()
         {
             InitializeComponent();
         }
 
-        private void Projects_Load(object sender, EventArgs e)
+        private void Technologies_Load(object sender, EventArgs e)
         {
-            lip = loadInfoProject;
-            loadInfoProject();
+            lit = loadInfoTechnogies;
+            loadInfoTechnogies();
         }
-        private void loadInfoProject()
+        private void loadInfoTechnogies()
         {
             DB db = new DB();
 
-            ProjectsDataGridView.Rows.Clear();
+            TechnologiesDataGridView.Rows.Clear();
 
-            string query = $"select * from project ";
+            string query = $"select * from technologies";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -53,31 +52,31 @@ namespace SoftDev.Forms.AdminForms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    ProjectsDataGridView.Rows.Add(s);
+                    TechnologiesDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            new AddProject(null, lip).Show();
+            new AddTechnologies(null, lit).Show();
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            new AddProject(ProjectsDataGridView[0, ProjectsDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lip).Show();
+            new AddTechnologies(TechnologiesDataGridView[0, TechnologiesDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lit).Show();
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"delete from project where id = {ProjectsDataGridView[0, ProjectsDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"delete from technologies where id = {TechnologiesDataGridView[0, TechnologiesDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
             db.openConnection();
 
             try
             {
                 command.ExecuteNonQuery();
-                MessageBox.Show("Проект удален");
+                MessageBox.Show("Технология удалена");
 
             }
             catch
@@ -86,17 +85,17 @@ namespace SoftDev.Forms.AdminForms
             }
 
             db.closeConnection();
-            loadInfoProject();
+            loadInfoTechnogies();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
 
-            ProjectsDataGridView.Rows.Clear();
+            TechnologiesDataGridView.Rows.Clear();
 
-            string searchString = $"select * from project " +
-                $"where concat (project.name, project.description, project.state) like '%" + SearchTextBox.Text + "%'";
+            string searchString = $"select * from technologies " +
+                $"where concat (technologies.name) like '%" + SearchTextBox.Text + "%'";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(searchString, db.getConnection()))
@@ -115,7 +114,7 @@ namespace SoftDev.Forms.AdminForms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    ProjectsDataGridView.Rows.Add(s);
+                    TechnologiesDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
@@ -123,40 +122,6 @@ namespace SoftDev.Forms.AdminForms
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-        }
-
-        private void OutputButton_Click(object sender, EventArgs e)
-        {
-            Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook workbook = excelApp.Workbooks.Add();
-            Excel.Worksheet worksheet = workbook.ActiveSheet;
-            for (int j = 0; j < ProjectsDataGridView.Columns.Count; j++)
-            {
-                if (ProjectsDataGridView.Columns[j].Visible)
-                {
-                    worksheet.Cells[1, j] = ProjectsDataGridView.Columns[j].HeaderText;
-                }
-            }
-            for (int i = 0; i < ProjectsDataGridView.Rows.Count; i++)
-            {
-                for (int j = 0; j < ProjectsDataGridView.Columns.Count; j++)
-                {
-                    if (ProjectsDataGridView.Columns[j].Visible)
-                    {
-                        worksheet.Cells[i + 2, j] = ProjectsDataGridView.Rows[i].Cells[j].Value;
-                    }
-                }
-            }
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Excel File|*.xlsx";
-            saveFileDialog1.Title = "Сохранить Excel файл";
-            saveFileDialog1.ShowDialog();
-            if (saveFileDialog1.FileName != "")
-            {
-                workbook.SaveAs(saveFileDialog1.FileName);
-            }
-            workbook.Close();
-            excelApp.Quit();
         }
     }
 }

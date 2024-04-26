@@ -83,17 +83,29 @@
     <Compile Include="Forms\AddForms\AddRequest.Designer.cs">
       <DependentUpon>AddRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddForms\AddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddTask.Designer.cs">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddTechnologies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\AddTechnologies.Designer.cs">
+      <DependentUpon>AddTechnologies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\Projects.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminForms\Projects.Designer.cs">
       <DependentUpon>Projects.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminForms\References.cs">
+    <Compile Include="Forms\AdminForms\ReferencesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminForms\References.Designer.cs">
-      <DependentUpon>References.cs</DependentUpon>
+    <Compile Include="Forms\AdminForms\ReferencesForm.Designer.cs">
+      <DependentUpon>ReferencesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminForms\References\Address.cs">
       <SubType>Form</SubType>
@@ -112,6 +124,18 @@
     </Compile>
     <Compile Include="Forms\AdminForms\Clients.Designer.cs">
       <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\References\Technologies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\References\Technologies.Designer.cs">
+      <DependentUpon>Technologies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Tasks.Designer.cs">
+      <DependentUpon>Tasks.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Autorization.cs">
       <SubType>Form</SubType>
@@ -160,11 +184,17 @@
     <EmbeddedResource Include="Forms\AddForms\AddRequest.resx">
       <DependentUpon>AddRequest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddTask.resx">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\AddTechnologies.resx">
+      <DependentUpon>AddTechnologies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\Projects.resx">
       <DependentUpon>Projects.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\References.resx">
-      <DependentUpon>References.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AdminForms\ReferencesForm.resx">
+      <DependentUpon>ReferencesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\References\Address.resx">
       <DependentUpon>Address.cs</DependentUpon>
@@ -174,6 +204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\References\Technologies.resx">
+      <DependentUpon>Technologies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\Tasks.resx">
+      <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
@@ -212,6 +248,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

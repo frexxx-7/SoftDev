@@ -183,6 +183,7 @@
             this.OutputButton.TabIndex = 42;
             this.OutputButton.Text = "Вывод";
             this.OutputButton.UseVisualStyleBackColor = true;
+            this.OutputButton.Click += new System.EventHandler(this.OutputButton_Click);
             // 
             // SearchButton
             // 

@@ -14,33 +14,23 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace SoftDev.Forms.AdminForms
 {
-    public partial class Clients : Form
+    public partial class Tasks : Form
     {
-        public delegate void LoadInfoClient();
-        private LoadInfoClient lic;
-        public Clients()
+        public delegate void LoadInfoTasks();
+        private LoadInfoTasks lit;
+        public Tasks()
         {
             InitializeComponent();
+            lit = loadInfoTasks;
         }
-
-        private void AddButton_Click(object sender, EventArgs e)
-        {
-            new AddClient(null, lic).Show();
-        }
-
-        private void EditButton_Click(object sender, EventArgs e)
-        {
-            new AddClient(ClientDataGridView[0, ClientDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lic).Show();
-        }
-
-        private void loadInfoClientsFromDB()
+        private void loadInfoTasks()
         {
             DB db = new DB();
 
-            ClientDataGridView.Rows.Clear();
+            TaskDataGridView.Rows.Clear();
 
-            string query = $"select client.id, client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo from client " +
-                $"join address on address.id = client.idAddress ";
+            string query = $"select tasks.id, project.name, tasks.description, tasks.deadline, tasks.state from tasks " +
+                $"join project on project.id = tasks.idProject ";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -59,20 +49,31 @@ namespace SoftDev.Forms.AdminForms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    ClientDataGridView.Rows.Add(s);
+                    TaskDataGridView.Rows.Add(s);
             }
             db.closeConnection();
         }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            new AddTask(null, lit).Show();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            new AddTask(TaskDataGridView[0, TaskDataGridView.SelectedCells[0].RowIndex].Value.ToString(), lit).Show();
+        }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"delete from client where id = {ClientDataGridView[0, ClientDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"delete from tasks where id = {TaskDataGridView[0, TaskDataGridView.SelectedCells[0].RowIndex].Value}", db.getConnection());
             db.openConnection();
 
             try
             {
                 command.ExecuteNonQuery();
-                MessageBox.Show("Клиент удален");
+                MessageBox.Show("Задача удалена");
 
             }
             catch
@@ -81,18 +82,18 @@ namespace SoftDev.Forms.AdminForms
             }
 
             db.closeConnection();
-            loadInfoClientsFromDB();
+            loadInfoTasks();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DB db = new DB();
 
-            ClientDataGridView.Rows.Clear();
+            TaskDataGridView.Rows.Clear();
 
-            string searchString = $"select client.id, client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house) as AddressInfo from client " +
-                $"join address on address.id = client.idAddress " +
-                $"where concat (client.surname, client.name, client.patronymic, client.numberPhone, client.passport, concat(address.country, ' ', address.city, ' ', address.street, ' ', address.house)) like '%" + SearchTextBox.Text + "%'";
+            string searchString = $"select tasks.id, project.name, tasks.description, tasks.deadline, tasks.state from tasks  " +
+                $"join project on project.id = tasks.idProject " +
+                $"where concat (tasks.id, project.name, tasks.description, tasks.deadline, tasks.state) like '%" + SearchTextBox.Text + "%'";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(searchString, db.getConnection()))
@@ -111,9 +112,14 @@ namespace SoftDev.Forms.AdminForms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    ClientDataGridView.Rows.Add(s);
+                    TaskDataGridView.Rows.Add(s);
             }
             db.closeConnection();
+        }
+
+        private void Tasks_Load(object sender, EventArgs e)
+        {
+            loadInfoTasks();
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -121,31 +127,25 @@ namespace SoftDev.Forms.AdminForms
             this.Hide();
         }
 
-        private void Clients_Load(object sender, EventArgs e)
-        {
-            loadInfoClientsFromDB();
-            lic = loadInfoClientsFromDB;
-        }
-
         private void OutputButton_Click(object sender, EventArgs e)
         {
             Excel.Application excelApp = new Excel.Application();
             Excel.Workbook workbook = excelApp.Workbooks.Add();
             Excel.Worksheet worksheet = workbook.ActiveSheet;
-            for (int j = 0; j < ClientDataGridView.Columns.Count; j++)
+            for (int j = 0; j < TaskDataGridView.Columns.Count; j++)
             {
-                if (ClientDataGridView.Columns[j].Visible)
+                if (TaskDataGridView.Columns[j].Visible)
                 {
-                    worksheet.Cells[1, j] = ClientDataGridView.Columns[j].HeaderText;
+                    worksheet.Cells[1, j] = TaskDataGridView.Columns[j].HeaderText;
                 }
             }
-            for (int i = 0; i < ClientDataGridView.Rows.Count; i++)
+            for (int i = 0; i < TaskDataGridView.Rows.Count; i++)
             {
-                for (int j = 0; j < ClientDataGridView.Columns.Count; j++)
+                for (int j = 0; j < TaskDataGridView.Columns.Count; j++)
                 {
-                    if (ClientDataGridView.Columns[j].Visible)
+                    if (TaskDataGridView.Columns[j].Visible)
                     {
-                        worksheet.Cells[i + 2, j] = ClientDataGridView.Rows[i].Cells[j].Value;
+                        worksheet.Cells[i + 2, j] = TaskDataGridView.Rows[i].Cells[j].Value;
                     }
                 }
             }

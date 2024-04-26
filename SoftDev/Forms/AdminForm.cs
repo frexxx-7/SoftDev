@@ -30,7 +30,7 @@ namespace SoftDev.Forms
 
         private void ReferenceButton_Click(object sender, EventArgs e)
         {
-            new References().Show();
+            new ReferencesForm().Show();
             this.Hide();
         }
 
@@ -43,6 +43,12 @@ namespace SoftDev.Forms
         private void ProjectsButton_Click(object sender, EventArgs e)
         {
             new Projects().Show();
+            this.Hide();
+        }
+
+        private void TaskButton_Click(object sender, EventArgs e)
+        {
+            new Tasks().Show();
             this.Hide();
         }
     }
