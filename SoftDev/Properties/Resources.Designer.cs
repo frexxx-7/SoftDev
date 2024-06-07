@@ -59,5 +59,15 @@ namespace SoftDev.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_programmer_download_free_png_images_59224 {
+            get {
+                object obj = ResourceManager.GetObject("png-programmer-download-free-png-images-59224", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

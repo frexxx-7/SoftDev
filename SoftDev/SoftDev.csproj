@@ -34,12 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.8\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,101 +59,23 @@
   <ItemGroup>
     <Compile Include="Classes\ComboBoxItem.cs" />
     <Compile Include="Classes\DB.cs" />
-    <Compile Include="Forms\AddForms\AddAddress.cs">
+    <Compile Include="Forms\AdminForms\Employees.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddForms\AddAddress.Designer.cs">
-      <DependentUpon>AddAddress.cs</DependentUpon>
+    <Compile Include="Forms\AdminForms\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddForms\AddClient.cs">
+    <Compile Include="Forms\AdminForms\Users.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddForms\AddClient.Designer.cs">
-      <DependentUpon>AddClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddDeveloper.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddDeveloper.Designer.cs">
-      <DependentUpon>AddDeveloper.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddProject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddProject.Designer.cs">
-      <DependentUpon>AddProject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddRequest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddRequest.Designer.cs">
-      <DependentUpon>AddRequest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddTask.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddTask.Designer.cs">
-      <DependentUpon>AddTask.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddTechnologies.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddForms\AddTechnologies.Designer.cs">
-      <DependentUpon>AddTechnologies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Projects.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Projects.Designer.cs">
-      <DependentUpon>Projects.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\ReferencesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\ReferencesForm.Designer.cs">
-      <DependentUpon>ReferencesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\References\Address.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\References\Address.Designer.cs">
-      <DependentUpon>Address.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Clients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Clients.Designer.cs">
-      <DependentUpon>Clients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\References\Technologies.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\References\Technologies.Designer.cs">
-      <DependentUpon>Technologies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Tasks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Tasks.Designer.cs">
-      <DependentUpon>Tasks.cs</DependentUpon>
+    <Compile Include="Forms\AdminForms\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Autorization.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Autorization.Designer.cs">
       <DependentUpon>Autorization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Developers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Developers.Designer.cs">
-      <DependentUpon>Developers.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
@@ -161,70 +89,22 @@
     <Compile Include="Forms\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminForms\Requests.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Requests.Designer.cs">
-      <DependentUpon>Requests.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AddForms\AddAddress.resx">
-      <DependentUpon>AddAddress.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AdminForms\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddClient.resx">
-      <DependentUpon>AddClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddDeveloper.resx">
-      <DependentUpon>AddDeveloper.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddProject.resx">
-      <DependentUpon>AddProject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddRequest.resx">
-      <DependentUpon>AddRequest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddTask.resx">
-      <DependentUpon>AddTask.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddForms\AddTechnologies.resx">
-      <DependentUpon>AddTechnologies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Projects.resx">
-      <DependentUpon>Projects.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\ReferencesForm.resx">
-      <DependentUpon>ReferencesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\References\Address.resx">
-      <DependentUpon>Address.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Clients.resx">
-      <DependentUpon>Clients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\References\Technologies.resx">
-      <DependentUpon>Technologies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Tasks.resx">
-      <DependentUpon>Tasks.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AdminForms\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Developers.resx">
-      <DependentUpon>Developers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Requests.resx">
-      <DependentUpon>Requests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -236,6 +116,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -277,6 +158,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-programmer-download-free-png-images-59224.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

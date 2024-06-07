@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftDev.Forms.AdminForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,24 +15,32 @@ namespace SoftDev.Forms
     {
         public static string idUser, login;
 
-        private void Main_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Autorization().Show();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void guna2Button2_Click_1(object sender, EventArgs e)
         {
+            new Employees().Show();
+            this.Close();
         }
 
-        private void AdminButton_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            new AdminForm().Show();
+            Application.Exit();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            new Users().Show();
+            this.Close();
+        }
+
+        private void guna2Button14_Click(object sender, EventArgs e)
+        {
+
         }
 
         public Main()

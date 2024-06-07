@@ -71,5 +71,10 @@ namespace SoftDev
         {
             Application.Exit();
         }
+
+        private void LoginTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
