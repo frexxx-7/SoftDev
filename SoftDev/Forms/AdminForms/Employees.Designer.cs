@@ -29,31 +29,49 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.headPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.пользователиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.организацииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отделыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.создатьЗаявкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.информацияОРазработкеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.статусыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заявкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчетностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.актыПриемапередачиПОToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.договораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.переченьПОToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.разработчикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EmployeesTab = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.SupervisorCheckbox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.EmailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PhoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.AppartmentTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DepartamentComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ApartmentTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.FrameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.HouseTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.StreetTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -70,37 +88,6 @@
             this.NameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmpAddButton = new Guna.UI2.WinForms.Guna2Button();
             this.EmployeesDatagrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.DepartamentsDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.DepartamentsNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
-            this.AddDepButton = new Guna.UI2.WinForms.Guna2Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.PositionsDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.PositionsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
-            this.AddButtonPos = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.idColPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PositionsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idColDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DepartamentsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idColEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeSurnameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -117,9 +104,32 @@
             this.AppartmentCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Supervisor = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.DepartamentsDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.idColDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartamentsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.DepartamentsNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
+            this.AddDepButton = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.PositionsDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.idColPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PositionsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.PositionsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
+            this.AddButtonPos = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.headPanel.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.EmployeesTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -183,6 +193,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Controls.Add(this.menuStrip1);
             this.guna2Panel4.Controls.Add(this.EmployeesTab);
             this.guna2Panel4.Controls.Add(this.guna2Panel2);
             this.guna2Panel4.Controls.Add(this.guna2Panel1);
@@ -192,17 +203,155 @@
             this.guna2Panel4.Size = new System.Drawing.Size(1349, 987);
             this.guna2Panel4.TabIndex = 5;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.справочникиToolStripMenuItem,
+            this.заявкиToolStripMenuItem,
+            this.отчетностьToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(175, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(991, 28);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // справочникиToolStripMenuItem
+            // 
+            this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сотрудникиToolStripMenuItem,
+            this.пользователиToolStripMenuItem,
+            this.организацииToolStripMenuItem,
+            this.отделыToolStripMenuItem});
+            this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
+            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.справочникиToolStripMenuItem.Text = "Справочники";
+            // 
+            // сотрудникиToolStripMenuItem
+            // 
+            this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            // 
+            // пользователиToolStripMenuItem
+            // 
+            this.пользователиToolStripMenuItem.Name = "пользователиToolStripMenuItem";
+            this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.пользователиToolStripMenuItem.Text = "Пользователи";
+            this.пользователиToolStripMenuItem.Click += new System.EventHandler(this.пользователиToolStripMenuItem_Click);
+            // 
+            // организацииToolStripMenuItem
+            // 
+            this.организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
+            this.организацииToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.организацииToolStripMenuItem.Text = "Организации";
+            this.организацииToolStripMenuItem.Click += new System.EventHandler(this.организацииToolStripMenuItem_Click);
+            // 
+            // отделыToolStripMenuItem
+            // 
+            this.отделыToolStripMenuItem.Name = "отделыToolStripMenuItem";
+            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.отделыToolStripMenuItem.Text = "Населенный пункт";
+            this.отделыToolStripMenuItem.Click += new System.EventHandler(this.отделыToolStripMenuItem_Click);
+            // 
+            // заявкиToolStripMenuItem
+            // 
+            this.заявкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.создатьЗаявкуToolStripMenuItem,
+            this.информацияОРазработкеToolStripMenuItem,
+            this.статусыToolStripMenuItem,
+            this.заявкToolStripMenuItem});
+            this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
+            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.заявкиToolStripMenuItem.Text = "Заявки";
+            // 
+            // создатьЗаявкуToolStripMenuItem
+            // 
+            this.создатьЗаявкуToolStripMenuItem.Name = "создатьЗаявкуToolStripMenuItem";
+            this.создатьЗаявкуToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.создатьЗаявкуToolStripMenuItem.Text = "Создать заявку";
+            // 
+            // информацияОРазработкеToolStripMenuItem
+            // 
+            this.информацияОРазработкеToolStripMenuItem.Name = "информацияОРазработкеToolStripMenuItem";
+            this.информацияОРазработкеToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.информацияОРазработкеToolStripMenuItem.Text = "Информация о разработке";
+            // 
+            // статусыToolStripMenuItem
+            // 
+            this.статусыToolStripMenuItem.Name = "статусыToolStripMenuItem";
+            this.статусыToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.статусыToolStripMenuItem.Text = "Статусы";
+            // 
+            // заявкToolStripMenuItem
+            // 
+            this.заявкToolStripMenuItem.Name = "заявкToolStripMenuItem";
+            this.заявкToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.заявкToolStripMenuItem.Text = "Заявки";
+            // 
+            // отчетностьToolStripMenuItem
+            // 
+            this.отчетностьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.актыПриемапередачиПОToolStripMenuItem,
+            this.договораToolStripMenuItem,
+            this.переченьПОToolStripMenuItem});
+            this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
+            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.отчетностьToolStripMenuItem.Text = "Отчетность";
+            // 
+            // актыПриемапередачиПОToolStripMenuItem
+            // 
+            this.актыПриемапередачиПОToolStripMenuItem.Name = "актыПриемапередачиПОToolStripMenuItem";
+            this.актыПриемапередачиПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.актыПриемапередачиПОToolStripMenuItem.Text = "акты приема-передачи ПО";
+            // 
+            // договораToolStripMenuItem
+            // 
+            this.договораToolStripMenuItem.Name = "договораToolStripMenuItem";
+            this.договораToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.договораToolStripMenuItem.Text = "договора";
+            // 
+            // переченьПОToolStripMenuItem
+            // 
+            this.переченьПОToolStripMenuItem.Name = "переченьПОToolStripMenuItem";
+            this.переченьПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.переченьПОToolStripMenuItem.Text = "Перечень ПО";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.разработчикиToolStripMenuItem,
+            this.помощьToolStripMenuItem});
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            // 
+            // разработчикиToolStripMenuItem
+            // 
+            this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.разработчикиToolStripMenuItem.Text = "Разработчики";
+            // 
+            // помощьToolStripMenuItem
+            // 
+            this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.помощьToolStripMenuItem.Text = "Помощь";
+            // 
             // EmployeesTab
             // 
+            this.EmployeesTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EmployeesTab.Controls.Add(this.tabPage1);
             this.EmployeesTab.Controls.Add(this.tabPage2);
             this.EmployeesTab.Controls.Add(this.tabPage3);
-            this.EmployeesTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmployeesTab.ItemSize = new System.Drawing.Size(180, 40);
-            this.EmployeesTab.Location = new System.Drawing.Point(175, 0);
+            this.EmployeesTab.Location = new System.Drawing.Point(181, 40);
             this.EmployeesTab.Name = "EmployeesTab";
             this.EmployeesTab.SelectedIndex = 0;
-            this.EmployeesTab.Size = new System.Drawing.Size(991, 987);
+            this.EmployeesTab.Size = new System.Drawing.Size(979, 987);
             this.EmployeesTab.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.EmployeesTab.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.EmployeesTab.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -233,7 +382,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(983, 939);
+            this.tabPage1.Size = new System.Drawing.Size(971, 939);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Сотрудники";
             // 
@@ -241,12 +390,12 @@
             // 
             this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Panel3.Controls.Add(this.guna2Button15);
-            this.guna2Panel3.Controls.Add(this.guna2CheckBox1);
+            this.guna2Panel3.Controls.Add(this.SupervisorCheckbox);
             this.guna2Panel3.Controls.Add(this.label5);
-            this.guna2Panel3.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.EmailTextBox);
             this.guna2Panel3.Controls.Add(this.PhoneTextBox);
-            this.guna2Panel3.Controls.Add(this.AppartmentTextBox);
+            this.guna2Panel3.Controls.Add(this.DepartamentComboBox);
+            this.guna2Panel3.Controls.Add(this.ApartmentTextBox);
             this.guna2Panel3.Controls.Add(this.FrameTextBox);
             this.guna2Panel3.Controls.Add(this.HouseTextBox);
             this.guna2Panel3.Controls.Add(this.StreetTextBox);
@@ -265,7 +414,7 @@
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(596, 3);
+            this.guna2Panel3.Location = new System.Drawing.Point(584, 3);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(384, 933);
             this.guna2Panel3.TabIndex = 1;
@@ -289,70 +438,54 @@
             this.guna2Button15.Text = "Отмена";
             this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
-            // guna2CheckBox1
+            // SupervisorCheckbox
             // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(34, 802);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(123, 20);
-            this.guna2CheckBox1.TabIndex = 43;
-            this.guna2CheckBox1.Text = "Руководитель";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SupervisorCheckbox.AutoSize = true;
+            this.SupervisorCheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SupervisorCheckbox.CheckedState.BorderRadius = 0;
+            this.SupervisorCheckbox.CheckedState.BorderThickness = 0;
+            this.SupervisorCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SupervisorCheckbox.Location = new System.Drawing.Point(34, 802);
+            this.SupervisorCheckbox.Name = "SupervisorCheckbox";
+            this.SupervisorCheckbox.Size = new System.Drawing.Size(123, 20);
+            this.SupervisorCheckbox.TabIndex = 43;
+            this.SupervisorCheckbox.Text = "Руководитель";
+            this.SupervisorCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SupervisorCheckbox.UncheckedState.BorderRadius = 0;
+            this.SupervisorCheckbox.UncheckedState.BorderThickness = 0;
+            this.SupervisorCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(31, 426);
+            this.label5.Location = new System.Drawing.Point(31, 237);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 18);
             this.label5.TabIndex = 42;
             this.label5.Text = "Отдел";
             // 
-            // guna2ComboBox1
+            // EmailTextBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 5;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(34, 447);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(313, 36);
-            this.guna2ComboBox1.TabIndex = 41;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(34, 739);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Почта";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(313, 40);
-            this.guna2TextBox1.TabIndex = 40;
+            this.EmailTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.EmailTextBox.BorderRadius = 5;
+            this.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailTextBox.DefaultText = "";
+            this.EmailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.EmailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTextBox.Location = new System.Drawing.Point(34, 728);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.PasswordChar = '\0';
+            this.EmailTextBox.PlaceholderText = "Почта";
+            this.EmailTextBox.SelectedText = "";
+            this.EmailTextBox.Size = new System.Drawing.Size(313, 40);
+            this.EmailTextBox.TabIndex = 40;
             // 
             // PhoneTextBox
             // 
@@ -367,7 +500,7 @@
             this.PhoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PhoneTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PhoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PhoneTextBox.Location = new System.Drawing.Point(34, 691);
+            this.PhoneTextBox.Location = new System.Drawing.Point(34, 489);
             this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PhoneTextBox.Name = "PhoneTextBox";
             this.PhoneTextBox.PasswordChar = '\0';
@@ -376,27 +509,43 @@
             this.PhoneTextBox.Size = new System.Drawing.Size(313, 40);
             this.PhoneTextBox.TabIndex = 39;
             // 
-            // AppartmentTextBox
+            // DepartamentComboBox
             // 
-            this.AppartmentTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.AppartmentTextBox.BorderRadius = 5;
-            this.AppartmentTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AppartmentTextBox.DefaultText = "";
-            this.AppartmentTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.AppartmentTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.AppartmentTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.AppartmentTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.AppartmentTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AppartmentTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AppartmentTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AppartmentTextBox.Location = new System.Drawing.Point(34, 643);
-            this.AppartmentTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.AppartmentTextBox.Name = "AppartmentTextBox";
-            this.AppartmentTextBox.PasswordChar = '\0';
-            this.AppartmentTextBox.PlaceholderText = "Квартира";
-            this.AppartmentTextBox.SelectedText = "";
-            this.AppartmentTextBox.Size = new System.Drawing.Size(313, 40);
-            this.AppartmentTextBox.TabIndex = 38;
+            this.DepartamentComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.DepartamentComboBox.BorderRadius = 5;
+            this.DepartamentComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DepartamentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DepartamentComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DepartamentComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DepartamentComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.DepartamentComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.DepartamentComboBox.ItemHeight = 30;
+            this.DepartamentComboBox.Location = new System.Drawing.Point(34, 258);
+            this.DepartamentComboBox.Name = "DepartamentComboBox";
+            this.DepartamentComboBox.Size = new System.Drawing.Size(313, 36);
+            this.DepartamentComboBox.TabIndex = 41;
+            // 
+            // ApartmentTextBox
+            // 
+            this.ApartmentTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ApartmentTextBox.BorderRadius = 5;
+            this.ApartmentTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ApartmentTextBox.DefaultText = "";
+            this.ApartmentTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ApartmentTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ApartmentTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ApartmentTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ApartmentTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ApartmentTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ApartmentTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ApartmentTextBox.Location = new System.Drawing.Point(34, 681);
+            this.ApartmentTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ApartmentTextBox.Name = "ApartmentTextBox";
+            this.ApartmentTextBox.PasswordChar = '\0';
+            this.ApartmentTextBox.PlaceholderText = "Квартира";
+            this.ApartmentTextBox.SelectedText = "";
+            this.ApartmentTextBox.Size = new System.Drawing.Size(313, 40);
+            this.ApartmentTextBox.TabIndex = 38;
             // 
             // FrameTextBox
             // 
@@ -411,7 +560,7 @@
             this.FrameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FrameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FrameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FrameTextBox.Location = new System.Drawing.Point(34, 595);
+            this.FrameTextBox.Location = new System.Drawing.Point(34, 633);
             this.FrameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FrameTextBox.Name = "FrameTextBox";
             this.FrameTextBox.PasswordChar = '\0';
@@ -433,7 +582,7 @@
             this.HouseTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.HouseTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.HouseTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.HouseTextBox.Location = new System.Drawing.Point(34, 547);
+            this.HouseTextBox.Location = new System.Drawing.Point(34, 585);
             this.HouseTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.HouseTextBox.Name = "HouseTextBox";
             this.HouseTextBox.PasswordChar = '\0';
@@ -455,7 +604,7 @@
             this.StreetTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.StreetTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.StreetTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StreetTextBox.Location = new System.Drawing.Point(34, 499);
+            this.StreetTextBox.Location = new System.Drawing.Point(34, 537);
             this.StreetTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.StreetTextBox.Name = "StreetTextBox";
             this.StreetTextBox.PasswordChar = '\0';
@@ -468,7 +617,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(31, 361);
+            this.label4.Location = new System.Drawing.Point(31, 297);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 18);
             this.label4.TabIndex = 34;
@@ -485,7 +634,7 @@
             this.PositionComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.PositionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.PositionComboBox.ItemHeight = 30;
-            this.PositionComboBox.Location = new System.Drawing.Point(34, 382);
+            this.PositionComboBox.Location = new System.Drawing.Point(34, 318);
             this.PositionComboBox.Name = "PositionComboBox";
             this.PositionComboBox.Size = new System.Drawing.Size(313, 36);
             this.PositionComboBox.TabIndex = 33;
@@ -494,7 +643,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(31, 297);
+            this.label3.Location = new System.Drawing.Point(31, 357);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 18);
             this.label3.TabIndex = 32;
@@ -511,7 +660,7 @@
             this.UserComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.UserComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.UserComboBox.ItemHeight = 30;
-            this.UserComboBox.Location = new System.Drawing.Point(34, 318);
+            this.UserComboBox.Location = new System.Drawing.Point(34, 378);
             this.UserComboBox.Name = "UserComboBox";
             this.UserComboBox.Size = new System.Drawing.Size(313, 36);
             this.UserComboBox.TabIndex = 31;
@@ -520,7 +669,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(31, 234);
+            this.label2.Location = new System.Drawing.Point(31, 425);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 18);
             this.label2.TabIndex = 30;
@@ -537,7 +686,7 @@
             this.LocalityComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.LocalityComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.LocalityComboBox.ItemHeight = 30;
-            this.LocalityComboBox.Location = new System.Drawing.Point(34, 255);
+            this.LocalityComboBox.Location = new System.Drawing.Point(34, 446);
             this.LocalityComboBox.Name = "LocalityComboBox";
             this.LocalityComboBox.Size = new System.Drawing.Size(313, 36);
             this.LocalityComboBox.TabIndex = 29;
@@ -603,7 +752,7 @@
             this.SurnameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SurnameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SurnameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SurnameTextBox.Location = new System.Drawing.Point(34, 78);
+            this.SurnameTextBox.Location = new System.Drawing.Point(34, 25);
             this.SurnameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SurnameTextBox.Name = "SurnameTextBox";
             this.SurnameTextBox.PasswordChar = '\0';
@@ -625,7 +774,7 @@
             this.NameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.NameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameTextBox.Location = new System.Drawing.Point(34, 30);
+            this.NameTextBox.Location = new System.Drawing.Point(34, 78);
             this.NameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.PasswordChar = '\0';
@@ -650,22 +799,23 @@
             this.EmpAddButton.Size = new System.Drawing.Size(146, 43);
             this.EmpAddButton.TabIndex = 23;
             this.EmpAddButton.Text = "Сохранить";
+            this.EmpAddButton.Click += new System.EventHandler(this.EmpAddButton_Click);
             // 
             // EmployeesDatagrid
             // 
             this.EmployeesDatagrid.AllowUserToAddRows = false;
             this.EmployeesDatagrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            this.EmployeesDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmployeesDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.EmployeesDatagrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeesDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeesDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.EmployeesDatagrid.ColumnHeadersHeight = 30;
             this.EmployeesDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.EmployeesDatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -685,14 +835,14 @@
             this.AppartmentCol,
             this.EmailCol,
             this.Supervisor});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeesDatagrid.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeesDatagrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeesDatagrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmployeesDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeesDatagrid.Location = new System.Drawing.Point(3, 3);
@@ -701,7 +851,7 @@
             this.EmployeesDatagrid.RowHeadersVisible = false;
             this.EmployeesDatagrid.RowHeadersWidth = 51;
             this.EmployeesDatagrid.RowTemplate.Height = 24;
-            this.EmployeesDatagrid.Size = new System.Drawing.Size(977, 933);
+            this.EmployeesDatagrid.Size = new System.Drawing.Size(965, 933);
             this.EmployeesDatagrid.TabIndex = 0;
             this.EmployeesDatagrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.EmployeesDatagrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -724,582 +874,6 @@
             this.EmployeesDatagrid.ThemeStyle.RowsStyle.Height = 24;
             this.EmployeesDatagrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeesDatagrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabPage2.Controls.Add(this.DepartamentsDataGrid);
-            this.tabPage2.Controls.Add(this.guna2Panel5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 44);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(983, 939);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Отделы";
-            // 
-            // DepartamentsDataGrid
-            // 
-            this.DepartamentsDataGrid.AllowUserToAddRows = false;
-            this.DepartamentsDataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            this.DepartamentsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
-            this.DepartamentsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DepartamentsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
-            this.DepartamentsDataGrid.ColumnHeadersHeight = 30;
-            this.DepartamentsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DepartamentsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idColDep,
-            this.DepartamentsNameColumn});
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DepartamentsDataGrid.DefaultCellStyle = dataGridViewCellStyle42;
-            this.DepartamentsDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DepartamentsDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.DepartamentsDataGrid.Location = new System.Drawing.Point(3, 3);
-            this.DepartamentsDataGrid.Name = "DepartamentsDataGrid";
-            this.DepartamentsDataGrid.ReadOnly = true;
-            this.DepartamentsDataGrid.RowHeadersVisible = false;
-            this.DepartamentsDataGrid.RowHeadersWidth = 51;
-            this.DepartamentsDataGrid.RowTemplate.Height = 24;
-            this.DepartamentsDataGrid.Size = new System.Drawing.Size(593, 933);
-            this.DepartamentsDataGrid.TabIndex = 3;
-            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DepartamentsDataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.DepartamentsDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.Height = 30;
-            this.DepartamentsDataGrid.ThemeStyle.ReadOnly = true;
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.Height = 24;
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Panel5.Controls.Add(this.DepartamentsNameTextBox);
-            this.guna2Panel5.Controls.Add(this.guna2Button16);
-            this.guna2Panel5.Controls.Add(this.AddDepButton);
-            this.guna2Panel5.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Panel5.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel5.Location = new System.Drawing.Point(596, 3);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(384, 933);
-            this.guna2Panel5.TabIndex = 2;
-            this.guna2Panel5.Visible = false;
-            // 
-            // DepartamentsNameTextBox
-            // 
-            this.DepartamentsNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.DepartamentsNameTextBox.BorderRadius = 5;
-            this.DepartamentsNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DepartamentsNameTextBox.DefaultText = "";
-            this.DepartamentsNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DepartamentsNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DepartamentsNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DepartamentsNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DepartamentsNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DepartamentsNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DepartamentsNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DepartamentsNameTextBox.Location = new System.Drawing.Point(39, 25);
-            this.DepartamentsNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DepartamentsNameTextBox.Name = "DepartamentsNameTextBox";
-            this.DepartamentsNameTextBox.PasswordChar = '\0';
-            this.DepartamentsNameTextBox.PlaceholderText = "Название";
-            this.DepartamentsNameTextBox.SelectedText = "";
-            this.DepartamentsNameTextBox.Size = new System.Drawing.Size(313, 40);
-            this.DepartamentsNameTextBox.TabIndex = 47;
-            // 
-            // guna2Button16
-            // 
-            this.guna2Button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button16.BorderRadius = 10;
-            this.guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Location = new System.Drawing.Point(191, 885);
-            this.guna2Button16.Name = "guna2Button16";
-            this.guna2Button16.Size = new System.Drawing.Size(161, 43);
-            this.guna2Button16.TabIndex = 46;
-            this.guna2Button16.Text = "Отмена";
-            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
-            // 
-            // AddDepButton
-            // 
-            this.AddDepButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddDepButton.BorderRadius = 10;
-            this.AddDepButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddDepButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddDepButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddDepButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddDepButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.AddDepButton.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.AddDepButton.ForeColor = System.Drawing.Color.White;
-            this.AddDepButton.Location = new System.Drawing.Point(39, 885);
-            this.AddDepButton.Name = "AddDepButton";
-            this.AddDepButton.Size = new System.Drawing.Size(146, 43);
-            this.AddDepButton.TabIndex = 45;
-            this.AddDepButton.Text = "Сохранить";
-            this.AddDepButton.Click += new System.EventHandler(this.AddDepButton_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabPage3.Controls.Add(this.PositionsDataGrid);
-            this.tabPage3.Controls.Add(this.guna2Panel6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 44);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(983, 939);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Должности";
-            // 
-            // PositionsDataGrid
-            // 
-            this.PositionsDataGrid.AllowUserToAddRows = false;
-            this.PositionsDataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.White;
-            this.PositionsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
-            this.PositionsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PositionsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
-            this.PositionsDataGrid.ColumnHeadersHeight = 30;
-            this.PositionsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PositionsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idColPos,
-            this.PositionsNameColumn});
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PositionsDataGrid.DefaultCellStyle = dataGridViewCellStyle45;
-            this.PositionsDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PositionsDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.PositionsDataGrid.Location = new System.Drawing.Point(0, 0);
-            this.PositionsDataGrid.Name = "PositionsDataGrid";
-            this.PositionsDataGrid.ReadOnly = true;
-            this.PositionsDataGrid.RowHeadersVisible = false;
-            this.PositionsDataGrid.RowHeadersWidth = 51;
-            this.PositionsDataGrid.RowTemplate.Height = 24;
-            this.PositionsDataGrid.Size = new System.Drawing.Size(599, 939);
-            this.PositionsDataGrid.TabIndex = 4;
-            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.PositionsDataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PositionsDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PositionsDataGrid.ThemeStyle.HeaderStyle.Height = 30;
-            this.PositionsDataGrid.ThemeStyle.ReadOnly = true;
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.Height = 24;
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.PositionsDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Panel6.Controls.Add(this.PositionsTextBox);
-            this.guna2Panel6.Controls.Add(this.guna2Button18);
-            this.guna2Panel6.Controls.Add(this.AddButtonPos);
-            this.guna2Panel6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel6.Location = new System.Drawing.Point(599, 0);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(384, 939);
-            this.guna2Panel6.TabIndex = 3;
-            this.guna2Panel6.Visible = false;
-            // 
-            // PositionsTextBox
-            // 
-            this.PositionsTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PositionsTextBox.BorderRadius = 5;
-            this.PositionsTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PositionsTextBox.DefaultText = "";
-            this.PositionsTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PositionsTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PositionsTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PositionsTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PositionsTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PositionsTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PositionsTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PositionsTextBox.Location = new System.Drawing.Point(39, 25);
-            this.PositionsTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PositionsTextBox.Name = "PositionsTextBox";
-            this.PositionsTextBox.PasswordChar = '\0';
-            this.PositionsTextBox.PlaceholderText = "Название";
-            this.PositionsTextBox.SelectedText = "";
-            this.PositionsTextBox.Size = new System.Drawing.Size(313, 40);
-            this.PositionsTextBox.TabIndex = 47;
-            // 
-            // guna2Button18
-            // 
-            this.guna2Button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button18.BorderRadius = 10;
-            this.guna2Button18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button18.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button18.ForeColor = System.Drawing.Color.White;
-            this.guna2Button18.Location = new System.Drawing.Point(191, 891);
-            this.guna2Button18.Name = "guna2Button18";
-            this.guna2Button18.Size = new System.Drawing.Size(161, 43);
-            this.guna2Button18.TabIndex = 46;
-            this.guna2Button18.Text = "Отмена";
-            this.guna2Button18.Click += new System.EventHandler(this.guna2Button18_Click);
-            // 
-            // AddButtonPos
-            // 
-            this.AddButtonPos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddButtonPos.BorderRadius = 10;
-            this.AddButtonPos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddButtonPos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddButtonPos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddButtonPos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddButtonPos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.AddButtonPos.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.AddButtonPos.ForeColor = System.Drawing.Color.White;
-            this.AddButtonPos.Location = new System.Drawing.Point(39, 891);
-            this.AddButtonPos.Name = "AddButtonPos";
-            this.AddButtonPos.Size = new System.Drawing.Size(146, 43);
-            this.AddButtonPos.TabIndex = 45;
-            this.AddButtonPos.Text = "Сохранить";
-            this.AddButtonPos.Click += new System.EventHandler(this.AddButtonPos_Click);
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Button13);
-            this.guna2Panel2.Controls.Add(this.guna2Button11);
-            this.guna2Panel2.Controls.Add(this.guna2Button2);
-            this.guna2Panel2.Controls.Add(this.guna2Button7);
-            this.guna2Panel2.Controls.Add(this.guna2Button4);
-            this.guna2Panel2.Controls.Add(this.guna2Button3);
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(1166, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(183, 987);
-            this.guna2Panel2.TabIndex = 3;
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.BorderRadius = 10;
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.Location = new System.Drawing.Point(0, 56);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(183, 56);
-            this.guna2Button13.TabIndex = 27;
-            this.guna2Button13.Text = "Отчет";
-            // 
-            // guna2Button11
-            // 
-            this.guna2Button11.BorderRadius = 10;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(183, 56);
-            this.guna2Button11.TabIndex = 26;
-            this.guna2Button11.Text = "Изменить";
-            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 535);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(183, 91);
-            this.guna2Button2.TabIndex = 25;
-            this.guna2Button2.Text = "Сотрудники";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BorderRadius = 10;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 626);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(183, 91);
-            this.guna2Button7.TabIndex = 24;
-            this.guna2Button7.Text = "Организации";
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 717);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(183, 91);
-            this.guna2Button4.TabIndex = 23;
-            this.guna2Button4.Text = "Заявки";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 808);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(183, 91);
-            this.guna2Button3.TabIndex = 22;
-            this.guna2Button3.Text = "Пользователи";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 899);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(183, 88);
-            this.guna2Button1.TabIndex = 21;
-            this.guna2Button1.Text = "Выход";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.guna2Button14);
-            this.guna2Panel1.Controls.Add(this.guna2Button12);
-            this.guna2Panel1.Controls.Add(this.guna2Button10);
-            this.guna2Panel1.Controls.Add(this.guna2Button9);
-            this.guna2Panel1.Controls.Add(this.guna2Button8);
-            this.guna2Panel1.Controls.Add(this.guna2Button6);
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(175, 987);
-            this.guna2Panel1.TabIndex = 0;
-            // 
-            // guna2Button12
-            // 
-            this.guna2Button12.BorderRadius = 10;
-            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button12.ForeColor = System.Drawing.Color.White;
-            this.guna2Button12.Location = new System.Drawing.Point(0, 56);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.Size = new System.Drawing.Size(175, 56);
-            this.guna2Button12.TabIndex = 24;
-            this.guna2Button12.Text = "Удалить";
-            this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.BorderRadius = 10;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(175, 56);
-            this.guna2Button10.TabIndex = 22;
-            this.guna2Button10.Text = "Добавить";
-            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.BorderRadius = 10;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.Location = new System.Drawing.Point(0, 623);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button9.TabIndex = 23;
-            this.guna2Button9.Text = "Населенный пункт";
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.BorderRadius = 10;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 714);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button8.TabIndex = 22;
-            this.guna2Button8.Text = "Разработка";
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 805);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button6.TabIndex = 21;
-            this.guna2Button6.Text = "Инструменты разработки";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 896);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button5.TabIndex = 20;
-            this.guna2Button5.Text = "ПО";
-            // 
-            // idColPos
-            // 
-            this.idColPos.HeaderText = "id";
-            this.idColPos.MinimumWidth = 6;
-            this.idColPos.Name = "idColPos";
-            this.idColPos.ReadOnly = true;
-            this.idColPos.Visible = false;
-            // 
-            // PositionsNameColumn
-            // 
-            this.PositionsNameColumn.HeaderText = "Название";
-            this.PositionsNameColumn.MinimumWidth = 6;
-            this.PositionsNameColumn.Name = "PositionsNameColumn";
-            this.PositionsNameColumn.ReadOnly = true;
-            // 
-            // idColDep
-            // 
-            this.idColDep.HeaderText = "id";
-            this.idColDep.MinimumWidth = 6;
-            this.idColDep.Name = "idColDep";
-            this.idColDep.ReadOnly = true;
-            this.idColDep.Visible = false;
-            // 
-            // DepartamentsNameColumn
-            // 
-            this.DepartamentsNameColumn.HeaderText = "Название";
-            this.DepartamentsNameColumn.MinimumWidth = 6;
-            this.DepartamentsNameColumn.Name = "DepartamentsNameColumn";
-            this.DepartamentsNameColumn.ReadOnly = true;
             // 
             // idColEmp
             // 
@@ -1414,23 +988,434 @@
             this.Supervisor.Name = "Supervisor";
             this.Supervisor.ReadOnly = true;
             // 
-            // guna2Button14
+            // tabPage2
             // 
-            this.guna2Button14.BorderRadius = 10;
-            this.guna2Button14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.White;
-            this.guna2Button14.Location = new System.Drawing.Point(0, 532);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button14.TabIndex = 26;
-            this.guna2Button14.Text = "Главная";
-            this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage2.Controls.Add(this.DepartamentsDataGrid);
+            this.tabPage2.Controls.Add(this.guna2Panel5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(971, 939);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Отделы";
+            // 
+            // DepartamentsDataGrid
+            // 
+            this.DepartamentsDataGrid.AllowUserToAddRows = false;
+            this.DepartamentsDataGrid.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DepartamentsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DepartamentsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DepartamentsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DepartamentsDataGrid.ColumnHeadersHeight = 30;
+            this.DepartamentsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DepartamentsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idColDep,
+            this.DepartamentsNameColumn});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DepartamentsDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DepartamentsDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DepartamentsDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.DepartamentsDataGrid.Location = new System.Drawing.Point(3, 3);
+            this.DepartamentsDataGrid.Name = "DepartamentsDataGrid";
+            this.DepartamentsDataGrid.ReadOnly = true;
+            this.DepartamentsDataGrid.RowHeadersVisible = false;
+            this.DepartamentsDataGrid.RowHeadersWidth = 51;
+            this.DepartamentsDataGrid.RowTemplate.Height = 24;
+            this.DepartamentsDataGrid.Size = new System.Drawing.Size(581, 933);
+            this.DepartamentsDataGrid.TabIndex = 3;
+            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DepartamentsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DepartamentsDataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.DepartamentsDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DepartamentsDataGrid.ThemeStyle.HeaderStyle.Height = 30;
+            this.DepartamentsDataGrid.ThemeStyle.ReadOnly = true;
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.Height = 24;
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DepartamentsDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // idColDep
+            // 
+            this.idColDep.HeaderText = "id";
+            this.idColDep.MinimumWidth = 6;
+            this.idColDep.Name = "idColDep";
+            this.idColDep.ReadOnly = true;
+            this.idColDep.Visible = false;
+            // 
+            // DepartamentsNameColumn
+            // 
+            this.DepartamentsNameColumn.HeaderText = "Название";
+            this.DepartamentsNameColumn.MinimumWidth = 6;
+            this.DepartamentsNameColumn.Name = "DepartamentsNameColumn";
+            this.DepartamentsNameColumn.ReadOnly = true;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel5.Controls.Add(this.DepartamentsNameTextBox);
+            this.guna2Panel5.Controls.Add(this.guna2Button16);
+            this.guna2Panel5.Controls.Add(this.AddDepButton);
+            this.guna2Panel5.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel5.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel5.Location = new System.Drawing.Point(584, 3);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(384, 933);
+            this.guna2Panel5.TabIndex = 2;
+            this.guna2Panel5.Visible = false;
+            // 
+            // DepartamentsNameTextBox
+            // 
+            this.DepartamentsNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DepartamentsNameTextBox.BorderRadius = 5;
+            this.DepartamentsNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DepartamentsNameTextBox.DefaultText = "";
+            this.DepartamentsNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DepartamentsNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DepartamentsNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DepartamentsNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DepartamentsNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DepartamentsNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DepartamentsNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DepartamentsNameTextBox.Location = new System.Drawing.Point(39, 25);
+            this.DepartamentsNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DepartamentsNameTextBox.Name = "DepartamentsNameTextBox";
+            this.DepartamentsNameTextBox.PasswordChar = '\0';
+            this.DepartamentsNameTextBox.PlaceholderText = "Название";
+            this.DepartamentsNameTextBox.SelectedText = "";
+            this.DepartamentsNameTextBox.Size = new System.Drawing.Size(313, 40);
+            this.DepartamentsNameTextBox.TabIndex = 47;
+            // 
+            // guna2Button16
+            // 
+            this.guna2Button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button16.BorderRadius = 10;
+            this.guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button16.ForeColor = System.Drawing.Color.White;
+            this.guna2Button16.Location = new System.Drawing.Point(191, 885);
+            this.guna2Button16.Name = "guna2Button16";
+            this.guna2Button16.Size = new System.Drawing.Size(161, 43);
+            this.guna2Button16.TabIndex = 46;
+            this.guna2Button16.Text = "Отмена";
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
+            // 
+            // AddDepButton
+            // 
+            this.AddDepButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddDepButton.BorderRadius = 10;
+            this.AddDepButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddDepButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddDepButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddDepButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddDepButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.AddDepButton.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.AddDepButton.ForeColor = System.Drawing.Color.White;
+            this.AddDepButton.Location = new System.Drawing.Point(39, 885);
+            this.AddDepButton.Name = "AddDepButton";
+            this.AddDepButton.Size = new System.Drawing.Size(146, 43);
+            this.AddDepButton.TabIndex = 45;
+            this.AddDepButton.Text = "Сохранить";
+            this.AddDepButton.Click += new System.EventHandler(this.AddDepButton_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage3.Controls.Add(this.PositionsDataGrid);
+            this.tabPage3.Controls.Add(this.guna2Panel6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(971, 939);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Должности";
+            // 
+            // PositionsDataGrid
+            // 
+            this.PositionsDataGrid.AllowUserToAddRows = false;
+            this.PositionsDataGrid.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.PositionsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.PositionsDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PositionsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.PositionsDataGrid.ColumnHeadersHeight = 30;
+            this.PositionsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.PositionsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idColPos,
+            this.PositionsNameColumn});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PositionsDataGrid.DefaultCellStyle = dataGridViewCellStyle9;
+            this.PositionsDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PositionsDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PositionsDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.PositionsDataGrid.Name = "PositionsDataGrid";
+            this.PositionsDataGrid.ReadOnly = true;
+            this.PositionsDataGrid.RowHeadersVisible = false;
+            this.PositionsDataGrid.RowHeadersWidth = 51;
+            this.PositionsDataGrid.RowTemplate.Height = 24;
+            this.PositionsDataGrid.Size = new System.Drawing.Size(587, 939);
+            this.PositionsDataGrid.TabIndex = 4;
+            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.PositionsDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.PositionsDataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PositionsDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.PositionsDataGrid.ThemeStyle.HeaderStyle.Height = 30;
+            this.PositionsDataGrid.ThemeStyle.ReadOnly = true;
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.Height = 24;
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PositionsDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // idColPos
+            // 
+            this.idColPos.HeaderText = "id";
+            this.idColPos.MinimumWidth = 6;
+            this.idColPos.Name = "idColPos";
+            this.idColPos.ReadOnly = true;
+            this.idColPos.Visible = false;
+            // 
+            // PositionsNameColumn
+            // 
+            this.PositionsNameColumn.HeaderText = "Название";
+            this.PositionsNameColumn.MinimumWidth = 6;
+            this.PositionsNameColumn.Name = "PositionsNameColumn";
+            this.PositionsNameColumn.ReadOnly = true;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel6.Controls.Add(this.PositionsTextBox);
+            this.guna2Panel6.Controls.Add(this.guna2Button18);
+            this.guna2Panel6.Controls.Add(this.AddButtonPos);
+            this.guna2Panel6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel6.Location = new System.Drawing.Point(587, 0);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(384, 939);
+            this.guna2Panel6.TabIndex = 3;
+            this.guna2Panel6.Visible = false;
+            // 
+            // PositionsTextBox
+            // 
+            this.PositionsTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PositionsTextBox.BorderRadius = 5;
+            this.PositionsTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PositionsTextBox.DefaultText = "";
+            this.PositionsTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PositionsTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PositionsTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PositionsTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PositionsTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PositionsTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PositionsTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PositionsTextBox.Location = new System.Drawing.Point(39, 25);
+            this.PositionsTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PositionsTextBox.Name = "PositionsTextBox";
+            this.PositionsTextBox.PasswordChar = '\0';
+            this.PositionsTextBox.PlaceholderText = "Название";
+            this.PositionsTextBox.SelectedText = "";
+            this.PositionsTextBox.Size = new System.Drawing.Size(313, 40);
+            this.PositionsTextBox.TabIndex = 47;
+            // 
+            // guna2Button18
+            // 
+            this.guna2Button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button18.BorderRadius = 10;
+            this.guna2Button18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button18.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button18.ForeColor = System.Drawing.Color.White;
+            this.guna2Button18.Location = new System.Drawing.Point(191, 891);
+            this.guna2Button18.Name = "guna2Button18";
+            this.guna2Button18.Size = new System.Drawing.Size(161, 43);
+            this.guna2Button18.TabIndex = 46;
+            this.guna2Button18.Text = "Отмена";
+            this.guna2Button18.Click += new System.EventHandler(this.guna2Button18_Click);
+            // 
+            // AddButtonPos
+            // 
+            this.AddButtonPos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddButtonPos.BorderRadius = 10;
+            this.AddButtonPos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddButtonPos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddButtonPos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddButtonPos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddButtonPos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.AddButtonPos.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.AddButtonPos.ForeColor = System.Drawing.Color.White;
+            this.AddButtonPos.Location = new System.Drawing.Point(39, 891);
+            this.AddButtonPos.Name = "AddButtonPos";
+            this.AddButtonPos.Size = new System.Drawing.Size(146, 43);
+            this.AddButtonPos.TabIndex = 45;
+            this.AddButtonPos.Text = "Сохранить";
+            this.AddButtonPos.Click += new System.EventHandler(this.AddButtonPos_Click);
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2Button13);
+            this.guna2Panel2.Controls.Add(this.guna2Button11);
+            this.guna2Panel2.Controls.Add(this.guna2Button1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(1166, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(183, 987);
+            this.guna2Panel2.TabIndex = 3;
+            // 
+            // guna2Button13
+            // 
+            this.guna2Button13.BorderRadius = 10;
+            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button13.ForeColor = System.Drawing.Color.White;
+            this.guna2Button13.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button13.Name = "guna2Button13";
+            this.guna2Button13.Size = new System.Drawing.Size(183, 56);
+            this.guna2Button13.TabIndex = 27;
+            this.guna2Button13.Text = "Отчет";
+            // 
+            // guna2Button11
+            // 
+            this.guna2Button11.BorderRadius = 10;
+            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button11.ForeColor = System.Drawing.Color.White;
+            this.guna2Button11.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button11.Name = "guna2Button11";
+            this.guna2Button11.Size = new System.Drawing.Size(183, 56);
+            this.guna2Button11.TabIndex = 26;
+            this.guna2Button11.Text = "Изменить";
+            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 899);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(183, 88);
+            this.guna2Button1.TabIndex = 21;
+            this.guna2Button1.Text = "Выход";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Button12);
+            this.guna2Panel1.Controls.Add(this.guna2Button10);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(175, 987);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Button12
+            // 
+            this.guna2Button12.BorderRadius = 10;
+            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button12.ForeColor = System.Drawing.Color.White;
+            this.guna2Button12.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button12.Name = "guna2Button12";
+            this.guna2Button12.Size = new System.Drawing.Size(175, 56);
+            this.guna2Button12.TabIndex = 24;
+            this.guna2Button12.Text = "Удалить";
+            this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.BorderRadius = 10;
+            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button10.ForeColor = System.Drawing.Color.White;
+            this.guna2Button10.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.Size = new System.Drawing.Size(175, 56);
+            this.guna2Button10.TabIndex = 22;
+            this.guna2Button10.Text = "Добавить";
+            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
             // 
             // Employees
             // 
@@ -1447,6 +1432,9 @@
             this.Load += new System.EventHandler(this.Employees_Load);
             this.headPanel.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.EmployeesTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
@@ -1473,26 +1461,15 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TabControl EmployeesTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2DataGridView EmployeesDatagrid;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private Guna.UI2.WinForms.Guna2Button guna2Button11;
-        private Guna.UI2.WinForms.Guna2Button guna2Button12;
         private Guna.UI2.WinForms.Guna2Button EmpAddButton;
         private Guna.UI2.WinForms.Guna2ComboBox LocalityComboBox;
         private System.Windows.Forms.Label label1;
@@ -1506,14 +1483,14 @@
         private Guna.UI2.WinForms.Guna2ComboBox UserComboBox;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox PhoneTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox AppartmentTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox ApartmentTextBox;
         private Guna.UI2.WinForms.Guna2TextBox FrameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox HouseTextBox;
         private Guna.UI2.WinForms.Guna2TextBox StreetTextBox;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2CheckBox SupervisorCheckbox;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox DepartamentComboBox;
+        private Guna.UI2.WinForms.Guna2TextBox EmailTextBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button15;
         private Guna.UI2.WinForms.Guna2DataGridView DepartamentsDataGrid;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
@@ -1545,6 +1522,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idColPos;
         private System.Windows.Forms.DataGridViewTextBoxColumn PositionsNameColumn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem пользователиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem организацииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отделыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заявкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem создатьЗаявкуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem информацияОРазработкеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem статусыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заявкToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отчетностьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem актыПриемапередачиПОToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem договораToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem переченьПОToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem разработчикиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button12;
+        private Guna.UI2.WinForms.Guna2Button guna2Button10;
     }
 }

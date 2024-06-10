@@ -379,5 +379,35 @@ namespace SoftDev.Forms.AdminForms
                     break;
             }
         }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            new Locality().Show();
+            this.Close();
+        }
+
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Employees().Show();
+            this.Close();
+        }
+
+        private void пользователиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Users().Show();
+            this.Close();
+        }
+
+        private void организацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Organizations().Show();
+            this.Close();
+        }
+
+        private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Locality().Show();
+            this.Close();
+        }
     }
 }

@@ -29,213 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.headPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.пользователиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.организацииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отделыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заявкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.создатьЗаявкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.информацияОРазработкеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.статусыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заявкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчетностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.актыПриемапередачиПОToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.договораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.переченьПОToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.разработчикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.headPanel.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.guna2Button14);
-            this.guna2Panel1.Controls.Add(this.guna2Button9);
-            this.guna2Panel1.Controls.Add(this.guna2Button8);
-            this.guna2Panel1.Controls.Add(this.guna2Button6);
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(175, 619);
-            this.guna2Panel1.TabIndex = 0;
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.BorderRadius = 10;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.Location = new System.Drawing.Point(0, 255);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button9.TabIndex = 19;
-            this.guna2Button9.Text = "Населенный пункт";
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.BorderRadius = 10;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 346);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button8.TabIndex = 18;
-            this.guna2Button8.Text = "Разработка";
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 437);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button6.TabIndex = 16;
-            this.guna2Button6.Text = "Инструменты разработки";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 528);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button5.TabIndex = 15;
-            this.guna2Button5.Text = "ПО";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Button2);
-            this.guna2Panel2.Controls.Add(this.guna2Button7);
-            this.guna2Panel2.Controls.Add(this.guna2Button4);
-            this.guna2Panel2.Controls.Add(this.guna2Button3);
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(1058, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(178, 619);
-            this.guna2Panel2.TabIndex = 3;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 167);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(178, 91);
-            this.guna2Button2.TabIndex = 20;
-            this.guna2Button2.Text = "Сотрудники";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BorderRadius = 10;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 258);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(178, 91);
-            this.guna2Button7.TabIndex = 18;
-            this.guna2Button7.Text = "Организации";
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 349);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(178, 91);
-            this.guna2Button4.TabIndex = 14;
-            this.guna2Button4.Text = "Заявки";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 440);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(178, 91);
-            this.guna2Button3.TabIndex = 13;
-            this.guna2Button3.Text = "Пользователи";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 531);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(178, 88);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Выход";
-            this.guna2Button1.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // headPanel
             // 
@@ -287,13 +111,159 @@
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.guna2Panel3);
-            this.guna2Panel4.Controls.Add(this.guna2Panel2);
-            this.guna2Panel4.Controls.Add(this.guna2Panel1);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel4.Location = new System.Drawing.Point(0, 41);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(1236, 619);
             this.guna2Panel4.TabIndex = 4;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackgroundImage = global::SoftDev.Properties.Resources.png_programmer_download_free_png_images_59224;
+            this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.guna2Panel3.Controls.Add(this.menuStrip1);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(1236, 619);
+            this.guna2Panel3.TabIndex = 4;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.справочникиToolStripMenuItem,
+            this.заявкиToolStripMenuItem,
+            this.отчетностьToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1236, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // справочникиToolStripMenuItem
+            // 
+            this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сотрудникиToolStripMenuItem,
+            this.пользователиToolStripMenuItem,
+            this.организацииToolStripMenuItem,
+            this.отделыToolStripMenuItem});
+            this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
+            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.справочникиToolStripMenuItem.Text = "Справочники";
+            // 
+            // сотрудникиToolStripMenuItem
+            // 
+            this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            this.сотрудникиToolStripMenuItem.Click += new System.EventHandler(this.сотрудникиToolStripMenuItem_Click);
+            // 
+            // пользователиToolStripMenuItem
+            // 
+            this.пользователиToolStripMenuItem.Name = "пользователиToolStripMenuItem";
+            this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.пользователиToolStripMenuItem.Text = "Пользователи";
+            this.пользователиToolStripMenuItem.Click += new System.EventHandler(this.пользователиToolStripMenuItem_Click);
+            // 
+            // организацииToolStripMenuItem
+            // 
+            this.организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
+            this.организацииToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.организацииToolStripMenuItem.Text = "Организации";
+            this.организацииToolStripMenuItem.Click += new System.EventHandler(this.организацииToolStripMenuItem_Click);
+            // 
+            // отделыToolStripMenuItem
+            // 
+            this.отделыToolStripMenuItem.Name = "отделыToolStripMenuItem";
+            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.отделыToolStripMenuItem.Text = "Населенный пункт";
+            this.отделыToolStripMenuItem.Click += new System.EventHandler(this.отделыToolStripMenuItem_Click);
+            // 
+            // заявкиToolStripMenuItem
+            // 
+            this.заявкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.создатьЗаявкуToolStripMenuItem,
+            this.информацияОРазработкеToolStripMenuItem,
+            this.статусыToolStripMenuItem,
+            this.заявкToolStripMenuItem});
+            this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
+            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.заявкиToolStripMenuItem.Text = "Заявки";
+            // 
+            // создатьЗаявкуToolStripMenuItem
+            // 
+            this.создатьЗаявкуToolStripMenuItem.Name = "создатьЗаявкуToolStripMenuItem";
+            this.создатьЗаявкуToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.создатьЗаявкуToolStripMenuItem.Text = "Создать заявку";
+            // 
+            // информацияОРазработкеToolStripMenuItem
+            // 
+            this.информацияОРазработкеToolStripMenuItem.Name = "информацияОРазработкеToolStripMenuItem";
+            this.информацияОРазработкеToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.информацияОРазработкеToolStripMenuItem.Text = "Информация о разработке";
+            // 
+            // статусыToolStripMenuItem
+            // 
+            this.статусыToolStripMenuItem.Name = "статусыToolStripMenuItem";
+            this.статусыToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.статусыToolStripMenuItem.Text = "Статусы";
+            // 
+            // заявкToolStripMenuItem
+            // 
+            this.заявкToolStripMenuItem.Name = "заявкToolStripMenuItem";
+            this.заявкToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
+            this.заявкToolStripMenuItem.Text = "Заявки";
+            // 
+            // отчетностьToolStripMenuItem
+            // 
+            this.отчетностьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.актыПриемапередачиПОToolStripMenuItem,
+            this.договораToolStripMenuItem,
+            this.переченьПОToolStripMenuItem});
+            this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
+            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.отчетностьToolStripMenuItem.Text = "Отчетность";
+            // 
+            // актыПриемапередачиПОToolStripMenuItem
+            // 
+            this.актыПриемапередачиПОToolStripMenuItem.Name = "актыПриемапередачиПОToolStripMenuItem";
+            this.актыПриемапередачиПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.актыПриемапередачиПОToolStripMenuItem.Text = "акты приема-передачи ПО";
+            // 
+            // договораToolStripMenuItem
+            // 
+            this.договораToolStripMenuItem.Name = "договораToolStripMenuItem";
+            this.договораToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.договораToolStripMenuItem.Text = "договора";
+            // 
+            // переченьПОToolStripMenuItem
+            // 
+            this.переченьПОToolStripMenuItem.Name = "переченьПОToolStripMenuItem";
+            this.переченьПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
+            this.переченьПОToolStripMenuItem.Text = "Перечень ПО";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.разработчикиToolStripMenuItem,
+            this.помощьToolStripMenuItem});
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            // 
+            // разработчикиToolStripMenuItem
+            // 
+            this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.разработчикиToolStripMenuItem.Text = "Разработчики";
+            // 
+            // помощьToolStripMenuItem
+            // 
+            this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // guna2DragControl1
             // 
@@ -305,34 +275,6 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackgroundImage = global::SoftDev.Properties.Resources.png_programmer_download_free_png_images_59224;
-            this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(175, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(883, 619);
-            this.guna2Panel3.TabIndex = 4;
-            // 
-            // guna2Button14
-            // 
-            this.guna2Button14.BorderRadius = 10;
-            this.guna2Button14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.White;
-            this.guna2Button14.Location = new System.Drawing.Point(0, 164);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(175, 91);
-            this.guna2Button14.TabIndex = 26;
-            this.guna2Button14.Text = "Главная";
-            this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -342,22 +284,22 @@
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.headPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
             this.headPanel.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel headPanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
@@ -366,15 +308,23 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem пользователиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem организацииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отделыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заявкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem создатьЗаявкуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem информацияОРазработкеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem статусыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заявкToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отчетностьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem актыПриемапередачиПОToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem договораToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem переченьПОToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem разработчикиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
     }
 }

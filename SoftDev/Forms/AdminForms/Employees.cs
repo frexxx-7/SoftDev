@@ -84,9 +84,14 @@ namespace SoftDev.Forms.AdminForms
         {
             DB db = new DB();
 
-            PositionsDataGrid.Rows.Clear();
+            EmployeesDatagrid.Rows.Clear();
 
-            string query = $"select * from positions ";
+            string query = $"select employees.id, employees.surname, employees.name, employees.patronymic, employees.dateBirthday, departaments.name, " +
+                $"positions.name, users.login, locality.name, numberPhone, street, house, frame, apartment, email, supervisor from employees " +
+                $"inner join departaments on employees.idDepartament = departaments.id " +
+                $"inner join positions on employees.idPosition = positions.id " +
+                $"inner join users on employees.idUser = users.id " +
+                $"inner join locality on employees.idLocality = locality.id ";
 
             db.openConnection();
             using (MySqlCommand mySqlCommand = new MySqlCommand(query, db.getConnection()))
@@ -106,7 +111,7 @@ namespace SoftDev.Forms.AdminForms
                 }
                 reader.Close();
                 foreach (string[] s in dataDB)
-                    PositionsDataGrid.Rows.Add(s);
+                    EmployeesDatagrid.Rows.Add(s);
             }
             db.closeConnection();
         }
@@ -134,6 +139,77 @@ namespace SoftDev.Forms.AdminForms
             AddDepButton.Text = "Добавить";
         }
 
+        private void loadInfoOneEmployee(string idRegion)
+        {
+            DB db = new DB();
+            string queryInfo = $"select * from employees " +
+            $"where id = {idRegion}";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
+
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                SurnameTextBox.Text = reader[1].ToString();
+                NameTextBox.Text = reader[2].ToString();
+                PatronymicTextBox.Text = reader[3].ToString();
+                DateBirthdayDateTimePicker.Value = Convert.ToDateTime(reader[4].ToString());
+
+                for (int i = 0; i < DepartamentComboBox.Items.Count; i++)
+                {
+                    if (reader[5].ToString() != "")
+                    {
+                        if (Convert.ToInt32((DepartamentComboBox.Items[i] as ComboBoxItem).Value) == Convert.ToInt32(reader[5]))
+                        {
+                            DepartamentComboBox.SelectedIndex = i;
+                        }
+                    }
+                }
+                for (int i = 0; i < PositionComboBox.Items.Count; i++)
+                {
+                    if (reader[6].ToString() != "")
+                    {
+                        if (Convert.ToInt32((PositionComboBox.Items[i] as ComboBoxItem).Value) == Convert.ToInt32(reader[6]))
+                        {
+                            PositionComboBox.SelectedIndex = i;
+                        }
+                    }
+                }
+                for (int i = 0; i < UserComboBox.Items.Count; i++)
+                {
+                    if (reader[7].ToString() != "")
+                    {
+                        if (Convert.ToInt32((UserComboBox.Items[i] as ComboBoxItem).Value) == Convert.ToInt32(reader[7]))
+                        {
+                            UserComboBox.SelectedIndex = i;
+                        }
+                    }
+                }
+                for (int i = 0; i < LocalityComboBox.Items.Count; i++)
+                {
+                    if (reader[8].ToString() != "")
+                    {
+                        if (Convert.ToInt32((LocalityComboBox.Items[i] as ComboBoxItem).Value) == Convert.ToInt32(reader[8]))
+                        {
+                            LocalityComboBox.SelectedIndex = i;
+                        }
+                    }
+                }
+
+                PhoneTextBox.Text = reader[9].ToString();
+                StreetTextBox.Text = reader[10].ToString();
+                HouseTextBox.Text = reader[11].ToString();
+                FrameTextBox.Text = reader[12].ToString();
+                ApartmentTextBox.Text = reader[13].ToString();
+                EmailTextBox.Text = reader[14].ToString();
+                SupervisorCheckbox.Checked = Convert.ToBoolean(reader[15]);
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
+
         private void guna2Button11_Click(object sender, EventArgs e)
         {
             addPanel.Visible = true;
@@ -144,7 +220,7 @@ namespace SoftDev.Forms.AdminForms
             switch (EmployeesTab.SelectedIndex)
             {
                 case 0:
-                    addPanel = guna2Panel3;
+                    loadInfoOneEmployee(EmployeesDatagrid[0, EmployeesDatagrid.SelectedCells[0].RowIndex].Value.ToString());
                     break;
                 case 1:
                     loadInfoOneDepartament(DepartamentsDataGrid[0, DepartamentsDataGrid.SelectedCells[0].RowIndex].Value.ToString());
@@ -164,6 +240,10 @@ namespace SoftDev.Forms.AdminForms
 
         private void EmployeesTab_SelectedIndexChanged(object sender, EventArgs e)
         {
+            loadInfoDepartamentComboBox();
+            loadInfoPositionComboBox();
+            loadInfoUsersComboBox();
+            loadInfoLocalityComboBox();
             switch (EmployeesTab.SelectedIndex)
             {
                 case 0:
@@ -179,12 +259,104 @@ namespace SoftDev.Forms.AdminForms
                     break;
             }
         }
+        private void loadInfoDepartamentComboBox()
+        {
+            DepartamentComboBox.Items.Clear();
 
+            DB db = new DB();
+            string queryInfo = $"SELECT id, name FROM departaments";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
+
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                ComboBoxItem item = new ComboBoxItem();
+                item.Text = $" {reader[1]}";
+                item.Value = reader[0];
+                DepartamentComboBox.Items.Add(item);
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
+        private void loadInfoPositionComboBox()
+        {
+            PositionComboBox.Items.Clear();
+
+            DB db = new DB();
+            string queryInfo = $"SELECT id, name FROM positions";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
+
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                ComboBoxItem item = new ComboBoxItem();
+                item.Text = $" {reader[1]}";
+                item.Value = reader[0];
+                PositionComboBox.Items.Add(item);
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
+        private void loadInfoUsersComboBox()
+        {
+            UserComboBox.Items.Clear();
+
+            DB db = new DB();
+            string queryInfo = $"SELECT id, login FROM users";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
+
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                ComboBoxItem item = new ComboBoxItem();
+                item.Text = $" {reader[1]}";
+                item.Value = reader[0];
+                UserComboBox.Items.Add(item);
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
+        private void loadInfoLocalityComboBox()
+        {
+            LocalityComboBox.Items.Clear();
+
+            DB db = new DB();
+            string queryInfo = $"SELECT id, name FROM locality";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
+
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                ComboBoxItem item = new ComboBoxItem();
+                item.Text = $" {reader[1]}";
+                item.Value = reader[0];
+                LocalityComboBox.Items.Add(item);
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
         private void Employees_Load(object sender, EventArgs e)
         {
             addPanel = guna2Panel3;
             loadInfoPosition();
             loadInfoDepartament();
+            loadInfoEmployees();
+            loadInfoDepartamentComboBox();
+            loadInfoPositionComboBox();
+            loadInfoUsersComboBox();
+            loadInfoLocalityComboBox();
         }
 
         private void guna2Button16_Click(object sender, EventArgs e)
@@ -228,6 +400,41 @@ namespace SoftDev.Forms.AdminForms
             {
                 command.ExecuteNonQuery();
                 MessageBox.Show("Отдел добавлен");
+                loadInfoPosition();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            PositionsTextBox.Text = "";
+            db.closeConnection();
+        }
+        private void addEmployeetInDB()
+        {
+            DB db = new DB();
+            MySqlCommand command = new MySqlCommand($"INSERT into employees (surname, name, patronymic, dateBirthday, idDepartament, idPosition, idUser, idLocality, numberPhone, street, house, frame, apartment, email, supervisor) values(" +
+                                                    $"@surname, @name, @patronymic, @dateBirthday, @idDepartament, @idPosition, @idUser, @idLocality, @numberPhone, @street, @house, @frame, @apartment, @email, @supervisor)", db.getConnection());
+            command.Parameters.AddWithValue("@surname", SurnameTextBox.Text);
+            command.Parameters.AddWithValue("@name", NameTextBox.Text);
+            command.Parameters.AddWithValue("@patronymic", PatronymicTextBox.Text);
+            command.Parameters.AddWithValue("@dateBirthday", DateBirthdayDateTimePicker.Value.ToString("yyyy.MM.dd"));
+            command.Parameters.AddWithValue("@idDepartament", (DepartamentComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idPosition", (PositionComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idUser", (UserComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idLocality", (LocalityComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@numberPhone", PhoneTextBox.Text);
+            command.Parameters.AddWithValue("@street", StreetTextBox.Text);
+            command.Parameters.AddWithValue("@house", HouseTextBox.Text);
+            command.Parameters.AddWithValue("@frame", FrameTextBox.Text);
+            command.Parameters.AddWithValue("@apartment", ApartmentTextBox.Text);
+            command.Parameters.AddWithValue("@email", EmailTextBox.Text);
+            command.Parameters.AddWithValue("@supervisor", SupervisorCheckbox.Checked);
+            db.openConnection();
+
+            try
+            {
+                command.ExecuteNonQuery();
+                MessageBox.Show("Сотрудник добавлен");
                 loadInfoPosition();
             }
             catch
@@ -317,6 +524,42 @@ namespace SoftDev.Forms.AdminForms
 
             db.closeConnection();
         }
+        private void updateEmployeeInDB(string idRegion)
+        {
+            DB db = new DB();
+            MySqlCommand command = new MySqlCommand($"update employees set surname=@surname, name=@name, patronymic=@patronymic, dateBirthday=@dateBirthday, idDepartament=@idDepartament, idPosition=@idPosition, idUser=@idUser, idLocality=@idLocality, numberPhone=@numberPhone, street=@street, house=@house, frame=@frame, apartment=@apartment, email=@email, supervisor=@supervisor where id = {idRegion}", db.getConnection());
+            command.Parameters.AddWithValue("@surname", SurnameTextBox.Text);
+            command.Parameters.AddWithValue("@name", NameTextBox.Text);
+            command.Parameters.AddWithValue("@patronymic", PatronymicTextBox.Text);
+            command.Parameters.AddWithValue("@dateBirthday", DateBirthdayDateTimePicker.Value.ToString("yyyy.MM.dd"));
+            command.Parameters.AddWithValue("@idDepartament", (DepartamentComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idPosition", (PositionComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idUser", (UserComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@idLocality", (LocalityComboBox.SelectedItem as ComboBoxItem).Value);
+            command.Parameters.AddWithValue("@numberPhone", PhoneTextBox.Text);
+            command.Parameters.AddWithValue("@street", StreetTextBox.Text);
+            command.Parameters.AddWithValue("@house", HouseTextBox.Text);
+            command.Parameters.AddWithValue("@frame", FrameTextBox.Text);
+            command.Parameters.AddWithValue("@apartment", ApartmentTextBox.Text);
+            command.Parameters.AddWithValue("@email", EmailTextBox.Text);
+            command.Parameters.AddWithValue("@supervisor", SupervisorCheckbox.Checked);
+
+            db.openConnection();
+
+            try
+            {
+                command.ExecuteNonQuery();
+                MessageBox.Show("Сотрудник изменен");
+                loadInfoPosition();
+
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            db.closeConnection();
+        }
         private void AddButtonPos_Click(object sender, EventArgs e)
         {
             if (AddButtonPos.Text == "Добавить")
@@ -350,7 +593,8 @@ namespace SoftDev.Forms.AdminForms
             switch (EmployeesTab.SelectedIndex)
             {
                 case 0:
-                    addPanel = guna2Panel3;
+                    deleteRecordInBd("employees", EmployeesDatagrid[0, EmployeesDatagrid.SelectedCells[0].RowIndex].Value.ToString());
+                    loadInfoEmployees();
                     break;
                 case 1:
                     deleteRecordInBd("departaments", DepartamentsDataGrid[0, DepartamentsDataGrid.SelectedCells[0].RowIndex].Value.ToString());
@@ -384,6 +628,39 @@ namespace SoftDev.Forms.AdminForms
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             new Users().Show();
+            this.Close();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            new Locality().Show();
+            this.Close();
+        }
+
+        private void EmpAddButton_Click(object sender, EventArgs e)
+        {
+            if (EmpAddButton.Text == "Добавить")
+                addEmployeetInDB();
+            else
+                updateEmployeeInDB(EmployeesDatagrid[0, EmployeesDatagrid.SelectedCells[0].RowIndex].Value.ToString());
+            loadInfoEmployees();
+        }
+
+        private void пользователиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Users().Show();
+            this.Close();
+        }
+
+        private void организацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Organizations().Show();
+            this.Close();
+        } 
+
+        private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Locality().Show();
             this.Close();
         }
     }

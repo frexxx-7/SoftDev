@@ -21,26 +21,34 @@ namespace SoftDev.Forms
             new Autorization().Show();
         }
 
-        private void guna2Button2_Click_1(object sender, EventArgs e)
-        {
-            new Employees().Show();
-            this.Close();
-        }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Employees().Show();
+            this.Close();
+        }
+
+        private void пользователиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Users().Show();
             this.Close();
         }
 
-        private void guna2Button14_Click(object sender, EventArgs e)
+        private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            new Locality().Show();
+            this.Close();
+        }
 
+        private void организацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Organizations().Show();
+            this.Close();
         }
 
         public Main()
