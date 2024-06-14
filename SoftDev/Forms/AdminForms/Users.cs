@@ -46,22 +46,11 @@ namespace SoftDev.Forms.AdminForms
             loadInfoAccessRight();
         }
 
-        private void guna2Button14_Click(object sender, EventArgs e)
-        {
-            new Main().Show();
-            this.Close();
-        }
-
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            new Employees().Show();
-            this.Close();
-        }
         private void loadInfoUsers()
         {
             DB db = new DB();
@@ -407,6 +396,30 @@ namespace SoftDev.Forms.AdminForms
         private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Locality().Show();
+            this.Close();
+        }
+
+        private void программноеОбеспечениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new SoftWare().Show();
+            this.Close();
+        }
+
+        private void создатьЗаявкуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
+        }
+
+        private void заявкToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
+        }
+
+        private void информацияОРазработкеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Development().Show();
             this.Close();
         }
     }

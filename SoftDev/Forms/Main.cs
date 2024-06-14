@@ -51,6 +51,30 @@ namespace SoftDev.Forms
             this.Close();
         }
 
+        private void программноеОбеспечениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new SoftWare().Show();
+            this.Close();
+        }
+
+        private void создатьЗаявкуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
+        }
+
+        private void заявкToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
+        }
+
+        private void информацияОРазработкеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Development().Show();
+            this.Close();
+        }
+
         public Main()
         {
             InitializeComponent();
