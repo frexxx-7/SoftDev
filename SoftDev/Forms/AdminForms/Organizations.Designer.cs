@@ -72,7 +72,9 @@
             this.FrameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OfficceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.FIODirectorTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.OfficTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.FrameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -365,6 +367,7 @@
             this.договораToolStripMenuItem.Name = "договораToolStripMenuItem";
             this.договораToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.договораToolStripMenuItem.Text = "договора";
+            this.договораToolStripMenuItem.Click += new System.EventHandler(this.договораToolStripMenuItem_Click);
             // 
             // переченьПОToolStripMenuItem
             // 
@@ -463,7 +466,8 @@
             this.HouseCol,
             this.FrameCol,
             this.OfficceCol,
-            this.EmailCol});
+            this.EmailCol,
+            this.Column1});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -568,9 +572,17 @@
             this.EmailCol.Name = "EmailCol";
             this.EmailCol.ReadOnly = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ФИО директора";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // guna2Panel5
             // 
             this.guna2Panel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel5.Controls.Add(this.FIODirectorTextBox);
             this.guna2Panel5.Controls.Add(this.emailTextBox);
             this.guna2Panel5.Controls.Add(this.OfficTextBox);
             this.guna2Panel5.Controls.Add(this.FrameTextBox);
@@ -590,6 +602,28 @@
             this.guna2Panel5.Size = new System.Drawing.Size(384, 564);
             this.guna2Panel5.TabIndex = 2;
             this.guna2Panel5.Visible = false;
+            // 
+            // FIODirectorTextBox
+            // 
+            this.FIODirectorTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.FIODirectorTextBox.BorderRadius = 5;
+            this.FIODirectorTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FIODirectorTextBox.DefaultText = "";
+            this.FIODirectorTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FIODirectorTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FIODirectorTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FIODirectorTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FIODirectorTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FIODirectorTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FIODirectorTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FIODirectorTextBox.Location = new System.Drawing.Point(39, 437);
+            this.FIODirectorTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FIODirectorTextBox.Name = "FIODirectorTextBox";
+            this.FIODirectorTextBox.PasswordChar = '\0';
+            this.FIODirectorTextBox.PlaceholderText = "ФИО директора";
+            this.FIODirectorTextBox.SelectedText = "";
+            this.FIODirectorTextBox.Size = new System.Drawing.Size(313, 40);
+            this.FIODirectorTextBox.TabIndex = 56;
             // 
             // emailTextBox
             // 
@@ -874,15 +908,6 @@
         private Guna.UI2.WinForms.Guna2TextBox NameTextBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private Guna.UI2.WinForms.Guna2Button AddOrgButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idColDep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PasswordCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoleCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StreetCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HouseCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FrameCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OfficceCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmailCol;
         private Guna.UI2.WinForms.Guna2TextBox OfficTextBox;
         private Guna.UI2.WinForms.Guna2TextBox FrameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox HouseTextBox;
@@ -893,5 +918,16 @@
         private System.Windows.Forms.ToolStripMenuItem информацияОРазработкеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem заявкToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem программноеОбеспечениеToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idColDep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PasswordCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoleCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StreetCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HouseCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FrameCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OfficceCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmailCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private Guna.UI2.WinForms.Guna2TextBox FIODirectorTextBox;
     }
 }

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
 using System.IO;
+using SoftDev.Forms.AdminForms;
 
 namespace SoftDev.Forms.Reports
 {
@@ -203,6 +204,54 @@ namespace SoftDev.Forms.Reports
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Employees().Show();
+            this.Close();
+        }
+
+        private void пользователиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Users().Show();
+            this.Close();
+        }
+
+        private void организацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Organizations().Show();
+            this.Close();
+        }
+
+        private void отделыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Locality().Show();
+            this.Close();
+        }
+
+        private void программноеОбеспечениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new SoftWare().Show();
+            this.Close();
+        }
+
+        private void создатьЗаявкуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
+        }
+
+        private void информацияОРазработкеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Development().Show();
+            this.Close();
+        }
+
+        private void заявкToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Request().Show();
+            this.Close();
         }
     }
 }

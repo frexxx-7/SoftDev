@@ -27,7 +27,7 @@ namespace SoftDev.Forms.AdminForms
 
             OrganizationsDataGrid.Rows.Clear();
 
-            string query = $"select organizations.id, organizations.name, locality.name, organizations.numberPhone, organizations.street, organizations.house, organizations.frame, organizations.office, organizations.email from organizations " +
+            string query = $"select organizations.id, organizations.name, locality.name, organizations.numberPhone, organizations.street, organizations.house, organizations.frame, organizations.office, organizations.email, organizations.fiodirector from organizations " +
                 $"inner join locality on organizations.idLocality = locality.id";
 
             db.openConnection();
@@ -100,6 +100,7 @@ namespace SoftDev.Forms.AdminForms
                 FrameTextBox.Text = reader[6].ToString();
                 OfficTextBox.Text = reader[7].ToString();
                 emailTextBox.Text = reader[8].ToString();
+                FIODirectorTextBox.Text = reader[9].ToString();
             }
             reader.Close();
 
@@ -171,8 +172,8 @@ namespace SoftDev.Forms.AdminForms
         private void addOrganizationstInDB()
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"INSERT into organizations (name, idLocality, numberPhone, street, house, frame, office, email) values(" +
-                                                    $"@name, @idLocality, @numberPhone, @street, @house, @frame, @office, @email)", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"INSERT into organizations (name, idLocality, numberPhone, street, house, frame, office, email, fiodirector) values(" +
+                                                    $"@name, @idLocality, @numberPhone, @street, @house, @frame, @office, @email, @fiodirector)", db.getConnection());
             command.Parameters.AddWithValue("@name", NameTextBox.Text);
             command.Parameters.AddWithValue("@idLocality", (LocalityComboBox.SelectedItem as ComboBoxItem).Value);
             command.Parameters.AddWithValue("@numberPhone", NumberPhoneTextBox.Text);
@@ -181,6 +182,7 @@ namespace SoftDev.Forms.AdminForms
             command.Parameters.AddWithValue("@frame", FrameTextBox.Text);
             command.Parameters.AddWithValue("@office", OfficTextBox.Text);
             command.Parameters.AddWithValue("@email", emailTextBox.Text);
+            command.Parameters.AddWithValue("@fiodirector", FIODirectorTextBox.Text);
             db.openConnection();
 
             try
@@ -205,7 +207,7 @@ namespace SoftDev.Forms.AdminForms
         private void updateOrganizationsInDB(string idRegion)
         {
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand($"update organizations set name=@name, idLocality=@idLocality, numberPhone=@numberPhone, street=@street, house=@house, frame=@frame, office=@office, email=@email where id = {idRegion}", db.getConnection());
+            MySqlCommand command = new MySqlCommand($"update organizations set name=@name, idLocality=@idLocality, numberPhone=@numberPhone, street=@street, house=@house, frame=@frame, office=@office, email=@email, fiodirector=@fiodirector where id = {idRegion}", db.getConnection());
             command.Parameters.AddWithValue("@name", NameTextBox.Text);
             command.Parameters.AddWithValue("@idLocality", (LocalityComboBox.SelectedItem as ComboBoxItem).Value);
             command.Parameters.AddWithValue("@numberPhone", NumberPhoneTextBox.Text);
@@ -214,6 +216,7 @@ namespace SoftDev.Forms.AdminForms
             command.Parameters.AddWithValue("@frame", FrameTextBox.Text);
             command.Parameters.AddWithValue("@office", OfficTextBox.Text);
             command.Parameters.AddWithValue("@email", emailTextBox.Text);
+            command.Parameters.AddWithValue("@fiodirector", FIODirectorTextBox.Text);
 
             db.openConnection();
 
@@ -325,6 +328,12 @@ namespace SoftDev.Forms.AdminForms
         private void актыПриемапередачиПОToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new TransferAcceptanceCertificate().Show();
+            this.Close();
+        }
+
+        private void договораToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Agreement().Show();
             this.Close();
         }
     }

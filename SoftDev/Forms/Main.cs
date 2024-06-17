@@ -82,6 +82,12 @@ namespace SoftDev.Forms
             this.Close();
         }
 
+        private void договораToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Agreement().Show();
+            this.Close();
+        }
+
         public Main()
         {
             InitializeComponent();

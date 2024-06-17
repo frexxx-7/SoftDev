@@ -584,5 +584,11 @@ namespace SoftDev.Forms.AdminForms
             new TransferAcceptanceCertificate().Show();
             this.Close();
         }
+
+        private void договораToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Agreement().Show();
+            this.Close();
+        }
     }
 }

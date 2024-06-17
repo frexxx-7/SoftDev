@@ -317,6 +317,7 @@
             this.договораToolStripMenuItem.Name = "договораToolStripMenuItem";
             this.договораToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.договораToolStripMenuItem.Text = "договора";
+            this.договораToolStripMenuItem.Click += new System.EventHandler(this.договораToolStripMenuItem_Click);
             // 
             // переченьПОToolStripMenuItem
             // 

@@ -1,6 +1,6 @@
-﻿namespace SoftDev.Forms
+﻿namespace SoftDev.Forms.Reports
 {
-    partial class Main
+    partial class Agreement
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,6 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,10 +52,14 @@
             this.разработчикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.NumberAgreementTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.DevelopmentComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DateAgreementDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DeviceTypesTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.headPanel.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,8 +71,8 @@
             this.headPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headPanel.Location = new System.Drawing.Point(0, 0);
             this.headPanel.Name = "headPanel";
-            this.headPanel.Size = new System.Drawing.Size(1236, 41);
-            this.headPanel.TabIndex = 2;
+            this.headPanel.Size = new System.Drawing.Size(905, 41);
+            this.headPanel.TabIndex = 3;
             // 
             // guna2ControlBox3
             // 
@@ -79,7 +81,7 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1077, 6);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(746, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox3.TabIndex = 28;
@@ -91,7 +93,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1128, 6);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(797, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 27;
@@ -102,31 +104,11 @@
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1179, 6);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(848, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 26;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.guna2Panel3);
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 41);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1236, 619);
-            this.guna2Panel4.TabIndex = 4;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackgroundImage = global::SoftDev.Properties.Resources.png_programmer_download_free_png_images_59224;
-            this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Panel3.Controls.Add(this.menuStrip1);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1236, 619);
-            this.guna2Panel3.TabIndex = 4;
             // 
             // menuStrip1
             // 
@@ -136,10 +118,10 @@
             this.заявкиToolStripMenuItem,
             this.отчетностьToolStripMenuItem,
             this.оПрограммеToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 41);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1236, 28);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(905, 28);
+            this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // справочникиToolStripMenuItem
@@ -235,14 +217,12 @@
             this.актыПриемапередачиПОToolStripMenuItem.Name = "актыПриемапередачиПОToolStripMenuItem";
             this.актыПриемапередачиПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.актыПриемапередачиПОToolStripMenuItem.Text = "акты приема-передачи ПО";
-            this.актыПриемапередачиПОToolStripMenuItem.Click += new System.EventHandler(this.актыПриемапередачиПОToolStripMenuItem_Click);
             // 
             // договораToolStripMenuItem
             // 
             this.договораToolStripMenuItem.Name = "договораToolStripMenuItem";
             this.договораToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.договораToolStripMenuItem.Text = "договора";
-            this.договораToolStripMenuItem.Click += new System.EventHandler(this.договораToolStripMenuItem_Click);
             // 
             // переченьПОToolStripMenuItem
             // 
@@ -277,49 +257,159 @@
             this.guna2DragControl1.TargetControl = this.headPanel;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // guna2Elipse1
+            // guna2Button13
             // 
-            this.guna2Elipse1.TargetControl = this;
+            this.guna2Button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button13.BorderRadius = 10;
+            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button13.ForeColor = System.Drawing.Color.White;
+            this.guna2Button13.Location = new System.Drawing.Point(710, 428);
+            this.guna2Button13.Name = "guna2Button13";
+            this.guna2Button13.Size = new System.Drawing.Size(183, 56);
+            this.guna2Button13.TabIndex = 70;
+            this.guna2Button13.Text = "Отчет";
+            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
-            // Main
+            // NumberAgreementTextBox
+            // 
+            this.NumberAgreementTextBox.BorderRadius = 5;
+            this.NumberAgreementTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NumberAgreementTextBox.DefaultText = "";
+            this.NumberAgreementTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NumberAgreementTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NumberAgreementTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NumberAgreementTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NumberAgreementTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NumberAgreementTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NumberAgreementTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NumberAgreementTextBox.Location = new System.Drawing.Point(12, 87);
+            this.NumberAgreementTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NumberAgreementTextBox.Name = "NumberAgreementTextBox";
+            this.NumberAgreementTextBox.PasswordChar = '\0';
+            this.NumberAgreementTextBox.PlaceholderText = "Номер договора";
+            this.NumberAgreementTextBox.SelectedText = "";
+            this.NumberAgreementTextBox.Size = new System.Drawing.Size(313, 40);
+            this.NumberAgreementTextBox.TabIndex = 71;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(9, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 18);
+            this.label6.TabIndex = 73;
+            this.label6.Text = "Разработка:";
+            // 
+            // DevelopmentComboBox
+            // 
+            this.DevelopmentComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.DevelopmentComboBox.BorderRadius = 5;
+            this.DevelopmentComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DevelopmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DevelopmentComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DevelopmentComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DevelopmentComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.DevelopmentComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.DevelopmentComboBox.ItemHeight = 30;
+            this.DevelopmentComboBox.Location = new System.Drawing.Point(12, 166);
+            this.DevelopmentComboBox.Name = "DevelopmentComboBox";
+            this.DevelopmentComboBox.Size = new System.Drawing.Size(313, 36);
+            this.DevelopmentComboBox.TabIndex = 72;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 18);
+            this.label2.TabIndex = 75;
+            this.label2.Text = "Дата договора";
+            // 
+            // DateAgreementDateTimePicker
+            // 
+            this.DateAgreementDateTimePicker.BorderRadius = 5;
+            this.DateAgreementDateTimePicker.Checked = true;
+            this.DateAgreementDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.DateAgreementDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateAgreementDateTimePicker.ForeColor = System.Drawing.Color.Navy;
+            this.DateAgreementDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateAgreementDateTimePicker.Location = new System.Drawing.Point(12, 246);
+            this.DateAgreementDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateAgreementDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateAgreementDateTimePicker.Name = "DateAgreementDateTimePicker";
+            this.DateAgreementDateTimePicker.Size = new System.Drawing.Size(313, 36);
+            this.DateAgreementDateTimePicker.TabIndex = 74;
+            this.DateAgreementDateTimePicker.Value = new System.DateTime(2024, 6, 7, 7, 24, 52, 525);
+            // 
+            // DeviceTypesTextBox
+            // 
+            this.DeviceTypesTextBox.BorderRadius = 5;
+            this.DeviceTypesTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DeviceTypesTextBox.DefaultText = "";
+            this.DeviceTypesTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DeviceTypesTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DeviceTypesTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DeviceTypesTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DeviceTypesTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DeviceTypesTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DeviceTypesTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DeviceTypesTextBox.Location = new System.Drawing.Point(398, 87);
+            this.DeviceTypesTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DeviceTypesTextBox.Name = "DeviceTypesTextBox";
+            this.DeviceTypesTextBox.PasswordChar = '\0';
+            this.DeviceTypesTextBox.PlaceholderText = "Типы устройств";
+            this.DeviceTypesTextBox.SelectedText = "";
+            this.DeviceTypesTextBox.Size = new System.Drawing.Size(313, 40);
+            this.DeviceTypesTextBox.TabIndex = 76;
+            // 
+            // Agreement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1236, 660);
-            this.Controls.Add(this.guna2Panel4);
+            this.ClientSize = new System.Drawing.Size(905, 496);
+            this.Controls.Add(this.DeviceTypesTextBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DateAgreementDateTimePicker);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.DevelopmentComboBox);
+            this.Controls.Add(this.NumberAgreementTextBox);
+            this.Controls.Add(this.guna2Button13);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.headPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Главная";
+            this.Name = "Agreement";
+            this.Text = "Agreement";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Agreement_Load);
             this.headPanel.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
         private Guna.UI2.WinForms.Guna2Panel headPanel;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem пользователиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem организацииToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отделыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem программноеОбеспечениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem заявкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem создатьЗаявкуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem информацияОРазработкеToolStripMenuItem;
@@ -331,6 +421,13 @@
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem разработчикиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem программноеОбеспечениеToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button13;
+        private Guna.UI2.WinForms.Guna2TextBox NumberAgreementTextBox;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2ComboBox DevelopmentComboBox;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateAgreementDateTimePicker;
+        private Guna.UI2.WinForms.Guna2TextBox DeviceTypesTextBox;
     }
 }

@@ -136,7 +136,7 @@
             this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 41);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(964, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(964, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,7 +149,7 @@
             this.отделыToolStripMenuItem,
             this.программноеОбеспечениеToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
-            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
+            this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.справочникиToolStripMenuItem.Text = "Справочники";
             // 
             // сотрудникиToolStripMenuItem
@@ -157,30 +157,35 @@
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
             this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            this.сотрудникиToolStripMenuItem.Click += new System.EventHandler(this.сотрудникиToolStripMenuItem_Click);
             // 
             // пользователиToolStripMenuItem
             // 
             this.пользователиToolStripMenuItem.Name = "пользователиToolStripMenuItem";
             this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.пользователиToolStripMenuItem.Text = "Пользователи";
+            this.пользователиToolStripMenuItem.Click += new System.EventHandler(this.пользователиToolStripMenuItem_Click);
             // 
             // организацииToolStripMenuItem
             // 
             this.организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
             this.организацииToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.организацииToolStripMenuItem.Text = "Организации";
+            this.организацииToolStripMenuItem.Click += new System.EventHandler(this.организацииToolStripMenuItem_Click);
             // 
             // отделыToolStripMenuItem
             // 
             this.отделыToolStripMenuItem.Name = "отделыToolStripMenuItem";
             this.отделыToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.отделыToolStripMenuItem.Text = "Населенный пункт";
+            this.отделыToolStripMenuItem.Click += new System.EventHandler(this.отделыToolStripMenuItem_Click);
             // 
             // программноеОбеспечениеToolStripMenuItem
             // 
             this.программноеОбеспечениеToolStripMenuItem.Name = "программноеОбеспечениеToolStripMenuItem";
             this.программноеОбеспечениеToolStripMenuItem.Size = new System.Drawing.Size(288, 26);
             this.программноеОбеспечениеToolStripMenuItem.Text = "Программное обеспечение";
+            this.программноеОбеспечениеToolStripMenuItem.Click += new System.EventHandler(this.программноеОбеспечениеToolStripMenuItem_Click);
             // 
             // заявкиToolStripMenuItem
             // 
@@ -189,7 +194,7 @@
             this.информацияОРазработкеToolStripMenuItem,
             this.заявкToolStripMenuItem});
             this.заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
-            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(71, 26);
+            this.заявкиToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.заявкиToolStripMenuItem.Text = "Заявки";
             // 
             // создатьЗаявкуToolStripMenuItem
@@ -197,18 +202,21 @@
             this.создатьЗаявкуToolStripMenuItem.Name = "создатьЗаявкуToolStripMenuItem";
             this.создатьЗаявкуToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.создатьЗаявкуToolStripMenuItem.Text = "Создать заявку";
+            this.создатьЗаявкуToolStripMenuItem.Click += new System.EventHandler(this.создатьЗаявкуToolStripMenuItem_Click);
             // 
             // информацияОРазработкеToolStripMenuItem
             // 
             this.информацияОРазработкеToolStripMenuItem.Name = "информацияОРазработкеToolStripMenuItem";
             this.информацияОРазработкеToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.информацияОРазработкеToolStripMenuItem.Text = "Информация о разработке";
+            this.информацияОРазработкеToolStripMenuItem.Click += new System.EventHandler(this.информацияОРазработкеToolStripMenuItem_Click);
             // 
             // заявкToolStripMenuItem
             // 
             this.заявкToolStripMenuItem.Name = "заявкToolStripMenuItem";
             this.заявкToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.заявкToolStripMenuItem.Text = "Заявки";
+            this.заявкToolStripMenuItem.Click += new System.EventHandler(this.заявкToolStripMenuItem_Click);
             // 
             // отчетностьToolStripMenuItem
             // 
@@ -217,7 +225,7 @@
             this.договораToolStripMenuItem,
             this.переченьПОToolStripMenuItem});
             this.отчетностьToolStripMenuItem.Name = "отчетностьToolStripMenuItem";
-            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(101, 26);
+            this.отчетностьToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
             this.отчетностьToolStripMenuItem.Text = "Отчетность";
             // 
             // актыПриемапередачиПОToolStripMenuItem
@@ -244,7 +252,7 @@
             this.разработчикиToolStripMenuItem,
             this.помощьToolStripMenuItem});
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // разработчикиToolStripMenuItem
