@@ -88,6 +88,12 @@ namespace SoftDev.Forms
             this.Close();
         }
 
+        private void переченьПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ScrollSoftWare().Show();
+            this.Close();
+        }
+
         public Main()
         {
             InitializeComponent();

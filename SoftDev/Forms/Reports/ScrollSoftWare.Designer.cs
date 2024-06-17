@@ -1,6 +1,6 @@
-﻿namespace SoftDev.Forms
+﻿namespace SoftDev.Forms.Reports
 {
-    partial class Main
+    partial class ScrollSoftWare
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.headPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,12 +53,17 @@
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.разработчикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.SoftWareDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.idColDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartamentsNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PasswordCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoleCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.headPanel.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SoftWareDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // headPanel
@@ -69,8 +74,8 @@
             this.headPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headPanel.Location = new System.Drawing.Point(0, 0);
             this.headPanel.Name = "headPanel";
-            this.headPanel.Size = new System.Drawing.Size(1236, 41);
-            this.headPanel.TabIndex = 2;
+            this.headPanel.Size = new System.Drawing.Size(1014, 41);
+            this.headPanel.TabIndex = 3;
             // 
             // guna2ControlBox3
             // 
@@ -79,7 +84,7 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1077, 6);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(855, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox3.TabIndex = 28;
@@ -91,7 +96,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1128, 6);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(906, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 27;
@@ -102,31 +107,11 @@
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Navy;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1179, 6);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(957, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 26;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.guna2Panel3);
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 41);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1236, 619);
-            this.guna2Panel4.TabIndex = 4;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackgroundImage = global::SoftDev.Properties.Resources.png_programmer_download_free_png_images_59224;
-            this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Panel3.Controls.Add(this.menuStrip1);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1236, 619);
-            this.guna2Panel3.TabIndex = 4;
             // 
             // menuStrip1
             // 
@@ -136,10 +121,10 @@
             this.заявкиToolStripMenuItem,
             this.отчетностьToolStripMenuItem,
             this.оПрограммеToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 41);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1236, 28);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(1014, 28);
+            this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // справочникиToolStripMenuItem
@@ -249,7 +234,6 @@
             this.переченьПОToolStripMenuItem.Name = "переченьПОToolStripMenuItem";
             this.переченьПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.переченьПОToolStripMenuItem.Text = "Перечень ПО";
-            this.переченьПОToolStripMenuItem.Click += new System.EventHandler(this.переченьПОToolStripMenuItem_Click);
             // 
             // оПрограммеToolStripMenuItem
             // 
@@ -272,55 +256,170 @@
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
-            // guna2DragControl1
+            // guna2Button13
             // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.headPanel;
-            this.guna2DragControl1.UseTransparentDrag = true;
+            this.guna2Button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button13.BorderRadius = 10;
+            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2Button13.ForeColor = System.Drawing.Color.White;
+            this.guna2Button13.Location = new System.Drawing.Point(819, 508);
+            this.guna2Button13.Name = "guna2Button13";
+            this.guna2Button13.Size = new System.Drawing.Size(183, 56);
+            this.guna2Button13.TabIndex = 71;
+            this.guna2Button13.Text = "Отчет";
+            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
-            // guna2Elipse1
+            // SoftWareDataGrid
             // 
-            this.guna2Elipse1.TargetControl = this;
+            this.SoftWareDataGrid.AllowUserToAddRows = false;
+            this.SoftWareDataGrid.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            this.SoftWareDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            this.SoftWareDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SoftWareDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SoftWareDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            this.SoftWareDataGrid.ColumnHeadersHeight = 30;
+            this.SoftWareDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SoftWareDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idColDep,
+            this.DepartamentsNameColumn,
+            this.PasswordCol,
+            this.RoleCol,
+            this.Column1,
+            this.Column2});
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SoftWareDataGrid.DefaultCellStyle = dataGridViewCellStyle30;
+            this.SoftWareDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.SoftWareDataGrid.Location = new System.Drawing.Point(67, 108);
+            this.SoftWareDataGrid.Name = "SoftWareDataGrid";
+            this.SoftWareDataGrid.ReadOnly = true;
+            this.SoftWareDataGrid.RowHeadersVisible = false;
+            this.SoftWareDataGrid.RowHeadersWidth = 51;
+            this.SoftWareDataGrid.RowTemplate.Height = 24;
+            this.SoftWareDataGrid.Size = new System.Drawing.Size(852, 362);
+            this.SoftWareDataGrid.TabIndex = 72;
+            this.SoftWareDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.SoftWareDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.SoftWareDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.SoftWareDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.SoftWareDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.SoftWareDataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.SoftWareDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SoftWareDataGrid.ThemeStyle.HeaderStyle.Height = 30;
+            this.SoftWareDataGrid.ThemeStyle.ReadOnly = true;
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.Height = 24;
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SoftWareDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Main
+            // idColDep
+            // 
+            this.idColDep.HeaderText = "id";
+            this.idColDep.MinimumWidth = 6;
+            this.idColDep.Name = "idColDep";
+            this.idColDep.ReadOnly = true;
+            this.idColDep.Visible = false;
+            // 
+            // DepartamentsNameColumn
+            // 
+            this.DepartamentsNameColumn.HeaderText = "Название";
+            this.DepartamentsNameColumn.MinimumWidth = 6;
+            this.DepartamentsNameColumn.Name = "DepartamentsNameColumn";
+            this.DepartamentsNameColumn.ReadOnly = true;
+            // 
+            // PasswordCol
+            // 
+            this.PasswordCol.HeaderText = "Версия";
+            this.PasswordCol.MinimumWidth = 6;
+            this.PasswordCol.Name = "PasswordCol";
+            this.PasswordCol.ReadOnly = true;
+            // 
+            // RoleCol
+            // 
+            this.RoleCol.HeaderText = "Описание";
+            this.RoleCol.MinimumWidth = 6;
+            this.RoleCol.Name = "RoleCol";
+            this.RoleCol.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Техническое задание";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Функционал";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // ScrollSoftWare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1236, 660);
-            this.Controls.Add(this.guna2Panel4);
+            this.ClientSize = new System.Drawing.Size(1014, 576);
+            this.Controls.Add(this.SoftWareDataGrid);
+            this.Controls.Add(this.guna2Button13);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.headPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Главная";
+            this.Name = "ScrollSoftWare";
+            this.Text = "ScrollSoftWare";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ScrollSoftWare_Load);
             this.headPanel.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SoftWareDataGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
         private Guna.UI2.WinForms.Guna2Panel headPanel;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem пользователиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem организацииToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отделыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem программноеОбеспечениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem заявкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem создатьЗаявкуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem информацияОРазработкеToolStripMenuItem;
@@ -332,6 +431,13 @@
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem разработчикиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem программноеОбеспечениеToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button guna2Button13;
+        private Guna.UI2.WinForms.Guna2DataGridView SoftWareDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idColDep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PasswordCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoleCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

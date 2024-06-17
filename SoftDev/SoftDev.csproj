@@ -125,6 +125,12 @@
     <Compile Include="Forms\Reports\Agreement.Designer.cs">
       <DependentUpon>Agreement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reports\ScrollSoftWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\ScrollSoftWare.Designer.cs">
+      <DependentUpon>ScrollSoftWare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reports\TransferAcceptanceCertificate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\Agreement.resx">
       <DependentUpon>Agreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\ScrollSoftWare.resx">
+      <DependentUpon>ScrollSoftWare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\TransferAcceptanceCertificate.resx">
       <DependentUpon>TransferAcceptanceCertificate.cs</DependentUpon>

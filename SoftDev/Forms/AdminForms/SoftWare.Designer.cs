@@ -400,6 +400,7 @@
             this.переченьПОToolStripMenuItem.Name = "переченьПОToolStripMenuItem";
             this.переченьПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.переченьПОToolStripMenuItem.Text = "Перечень ПО";
+            this.переченьПОToolStripMenuItem.Click += new System.EventHandler(this.переченьПОToolStripMenuItem_Click);
             // 
             // оПрограммеToolStripMenuItem
             // 

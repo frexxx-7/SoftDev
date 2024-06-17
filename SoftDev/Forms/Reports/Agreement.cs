@@ -192,5 +192,17 @@ namespace SoftDev.Forms.Reports
             new Request().Show();
             this.Close();
         }
+
+        private void актыПриемапередачиПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new TransferAcceptanceCertificate().Show();
+            this.Close();
+        }
+
+        private void переченьПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ScrollSoftWare().Show();
+            this.Close();
+        }
     }
 }

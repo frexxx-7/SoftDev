@@ -359,5 +359,11 @@ namespace SoftDev.Forms.AdminForms
             new Agreement().Show();
             this.Close();
         }
+
+        private void переченьПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ScrollSoftWare().Show();
+            this.Close();
+        }
     }
 }
