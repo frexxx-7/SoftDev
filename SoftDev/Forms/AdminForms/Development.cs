@@ -1,6 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
 using SoftDev.Classes;
+using SoftDev.Forms.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -321,6 +322,28 @@ namespace SoftDev.Forms.AdminForms
                 updateDevelopmentInDB(DevelopmentDataGrid[0, DevelopmentDataGrid.SelectedCells[0].RowIndex].Value.ToString());
 
             loadInfoDevelopment();
+        }
+
+        private void информацияОРазработкеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Development().Show();
+            this.Close();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void отчетностьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void актыПриемапередачиПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new TransferAcceptanceCertificate().Show();
+            this.Close();
         }
     }
 }

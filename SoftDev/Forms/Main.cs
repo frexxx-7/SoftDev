@@ -1,4 +1,5 @@
 ﻿using SoftDev.Forms.AdminForms;
+using SoftDev.Forms.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +73,12 @@ namespace SoftDev.Forms
         private void информацияОРазработкеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Development().Show();
+            this.Close();
+        }
+
+        private void актыПриемапередачиПОToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new TransferAcceptanceCertificate().Show();
             this.Close();
         }
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.headPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -70,7 +70,10 @@
             this.RoleCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.StateComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.OrganizationComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -282,28 +285,28 @@
             // сотрудникиToolStripMenuItem
             // 
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
             this.сотрудникиToolStripMenuItem.Click += new System.EventHandler(this.сотрудникиToolStripMenuItem_Click);
             // 
             // пользователиToolStripMenuItem
             // 
             this.пользователиToolStripMenuItem.Name = "пользователиToolStripMenuItem";
-            this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
+            this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.пользователиToolStripMenuItem.Text = "Пользователи";
             this.пользователиToolStripMenuItem.Click += new System.EventHandler(this.пользователиToolStripMenuItem_Click);
             // 
             // организацииToolStripMenuItem
             // 
             this.организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
-            this.организацииToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
+            this.организацииToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.организацииToolStripMenuItem.Text = "Организации";
             this.организацииToolStripMenuItem.Click += new System.EventHandler(this.организацииToolStripMenuItem_Click);
             // 
             // отделыToolStripMenuItem
             // 
             this.отделыToolStripMenuItem.Name = "отделыToolStripMenuItem";
-            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
+            this.отделыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.отделыToolStripMenuItem.Text = "Населенный пункт";
             this.отделыToolStripMenuItem.Click += new System.EventHandler(this.отделыToolStripMenuItem_Click);
             // 
@@ -322,6 +325,7 @@
             this.создатьЗаявкуToolStripMenuItem.Name = "создатьЗаявкуToolStripMenuItem";
             this.создатьЗаявкуToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.создатьЗаявкуToolStripMenuItem.Text = "Создать заявку";
+            this.создатьЗаявкуToolStripMenuItem.Click += new System.EventHandler(this.создатьЗаявкуToolStripMenuItem_Click);
             // 
             // информацияОРазработкеToolStripMenuItem
             // 
@@ -335,6 +339,7 @@
             this.заявкToolStripMenuItem.Name = "заявкToolStripMenuItem";
             this.заявкToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.заявкToolStripMenuItem.Text = "Заявки";
+            this.заявкToolStripMenuItem.Click += new System.EventHandler(this.заявкToolStripMenuItem_Click);
             // 
             // отчетностьToolStripMenuItem
             // 
@@ -351,6 +356,7 @@
             this.актыПриемапередачиПОToolStripMenuItem.Name = "актыПриемапередачиПОToolStripMenuItem";
             this.актыПриемапередачиПОToolStripMenuItem.Size = new System.Drawing.Size(281, 26);
             this.актыПриемапередачиПОToolStripMenuItem.Text = "акты приема-передачи ПО";
+            this.актыПриемапередачиПОToolStripMenuItem.Click += new System.EventHandler(this.актыПриемапередачиПОToolStripMenuItem_Click);
             // 
             // договораToolStripMenuItem
             // 
@@ -433,17 +439,17 @@
             // 
             this.RequestDataGrid.AllowUserToAddRows = false;
             this.RequestDataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.RequestDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.RequestDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.RequestDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RequestDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RequestDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.RequestDataGrid.ColumnHeadersHeight = 30;
             this.RequestDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.RequestDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -452,15 +458,16 @@
             this.PasswordCol,
             this.RoleCol,
             this.Column1,
-            this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RequestDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2,
+            this.Column3});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RequestDataGrid.DefaultCellStyle = dataGridViewCellStyle9;
             this.RequestDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RequestDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.RequestDataGrid.Location = new System.Drawing.Point(3, 3);
@@ -536,9 +543,18 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Статус";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // guna2Panel5
             // 
             this.guna2Panel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Panel5.Controls.Add(this.label4);
+            this.guna2Panel5.Controls.Add(this.StateComboBox);
             this.guna2Panel5.Controls.Add(this.label3);
             this.guna2Panel5.Controls.Add(this.OrganizationComboBox);
             this.guna2Panel5.Controls.Add(this.label2);
@@ -557,6 +573,36 @@
             this.guna2Panel5.Size = new System.Drawing.Size(384, 508);
             this.guna2Panel5.TabIndex = 2;
             this.guna2Panel5.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(36, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 18);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "Статус:";
+            // 
+            // StateComboBox
+            // 
+            this.StateComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.StateComboBox.BorderRadius = 5;
+            this.StateComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.StateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StateComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StateComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StateComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.StateComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.StateComboBox.ItemHeight = 30;
+            this.StateComboBox.Items.AddRange(new object[] {
+            "Отправлена",
+            "В разработке",
+            "Разработан"});
+            this.StateComboBox.Location = new System.Drawing.Point(39, 375);
+            this.StateComboBox.Name = "StateComboBox";
+            this.StateComboBox.Size = new System.Drawing.Size(313, 36);
+            this.StateComboBox.TabIndex = 59;
             // 
             // label3
             // 
@@ -786,17 +832,20 @@
         private Guna.UI2.WinForms.Guna2TextBox NameTextBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private Guna.UI2.WinForms.Guna2Button AddRequestButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idColDep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PasswordCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoleCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox SoftWareComboBox;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateRequestDateTimePicker;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ComboBox OrganizationComboBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idColDep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartamentsNameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PasswordCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoleCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox StateComboBox;
     }
 }
