@@ -40,7 +40,7 @@
             this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.ReportButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -185,7 +185,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Controls.Add(this.guna2Button13);
+            this.guna2Panel2.Controls.Add(this.ReportButton);
             this.guna2Panel2.Controls.Add(this.guna2Button11);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -194,22 +194,22 @@
             this.guna2Panel2.Size = new System.Drawing.Size(183, 675);
             this.guna2Panel2.TabIndex = 9;
             // 
-            // guna2Button13
+            // ReportButton
             // 
-            this.guna2Button13.BorderRadius = 10;
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.Location = new System.Drawing.Point(0, 56);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(183, 56);
-            this.guna2Button13.TabIndex = 27;
-            this.guna2Button13.Text = "Отчет";
+            this.ReportButton.BorderRadius = 10;
+            this.ReportButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ReportButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ReportButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ReportButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ReportButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ReportButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ReportButton.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ReportButton.ForeColor = System.Drawing.Color.White;
+            this.ReportButton.Location = new System.Drawing.Point(0, 56);
+            this.ReportButton.Name = "ReportButton";
+            this.ReportButton.Size = new System.Drawing.Size(183, 56);
+            this.ReportButton.TabIndex = 28;
+            this.ReportButton.Text = "Отчет";
             // 
             // guna2Button11
             // 
@@ -382,13 +382,14 @@
             // разработчикиToolStripMenuItem
             // 
             this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
-            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.разработчикиToolStripMenuItem.Text = "Разработчики";
+            this.разработчикиToolStripMenuItem.Click += new System.EventHandler(this.разработчикиToolStripMenuItem_Click);
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // DevelopmentTab
@@ -737,7 +738,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button12;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private Guna.UI2.WinForms.Guna2Button guna2Button11;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
@@ -777,5 +777,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox DeveloperComboBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private Guna.UI2.WinForms.Guna2Button AddDevelopmentButton;
+        private Guna.UI2.WinForms.Guna2Button ReportButton;
     }
 }

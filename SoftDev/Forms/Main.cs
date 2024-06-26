@@ -94,6 +94,11 @@ namespace SoftDev.Forms
             this.Close();
         }
 
+        private void разработчикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Developers().Show();
+        }
+
         public Main()
         {
             InitializeComponent();

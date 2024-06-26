@@ -26,7 +26,7 @@ namespace SoftDev.Forms.Reports
             ChairmanComboBox.Items.Clear();
 
             DB db = new DB();
-            string queryInfo = $"SELECT positions.name, employees.name FROM employees " +
+            string queryInfo = $"SELECT positions.name, concat(employees.surname, ' ', employees.name, ' ', employees.patronymic) FROM employees " +
                 $"inner join positions on employees.idPosition = positions.id";
             MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
@@ -49,7 +49,7 @@ namespace SoftDev.Forms.Reports
             DeveloperComboBox.Items.Clear();
 
             DB db = new DB();
-            string queryInfo = $"SELECT id, name FROM employees";
+            string queryInfo = $"SELECT id, concat(employees.surname, ' ', employees.name, ' ', employees.patronymic) FROM employees";
             MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
             db.openConnection();
@@ -71,7 +71,7 @@ namespace SoftDev.Forms.Reports
             DirectorComboBox.Items.Clear();
 
             DB db = new DB();
-            string queryInfo = $"SELECT id, name FROM employees";
+            string queryInfo = $"SELECT id, concat(employees.surname, ' ', employees.name, ' ', employees.patronymic) FROM employees";
             MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
             db.openConnection();

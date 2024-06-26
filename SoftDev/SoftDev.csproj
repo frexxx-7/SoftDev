@@ -59,6 +59,12 @@
   <ItemGroup>
     <Compile Include="Classes\ComboBoxItem.cs" />
     <Compile Include="Classes\DB.cs" />
+    <Compile Include="Forms\AdminForms\Developers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Developers.Designer.cs">
+      <DependentUpon>Developers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\Development.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminForms\Developers.resx">
+      <DependentUpon>Developers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\Development.resx">
       <DependentUpon>Development.cs</DependentUpon>
     </EmbeddedResource>

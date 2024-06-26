@@ -97,7 +97,7 @@ namespace SoftDev.Forms.AdminForms
             DeveloperComboBox.Items.Clear();
 
             DB db = new DB();
-            string queryInfo = $"SELECT id, name FROM employees";
+            string queryInfo = $"SELECT id, concat(employees.surname, ' ', employees.name, ' ', employees.patronymic) FROM employees";
             MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
             db.openConnection();
@@ -356,6 +356,11 @@ namespace SoftDev.Forms.AdminForms
         {
             new ScrollSoftWare().Show();
             this.Close();
+        }
+
+        private void разработчикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Developers().Show();
         }
     }
 }

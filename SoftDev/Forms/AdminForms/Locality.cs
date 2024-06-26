@@ -764,5 +764,10 @@ namespace SoftDev.Forms.AdminForms
             new ScrollSoftWare().Show();
             this.Close();
         }
+
+        private void разработчикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Developers().Show();
+        }
     }
 }
