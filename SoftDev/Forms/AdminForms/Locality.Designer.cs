@@ -300,7 +300,7 @@
             this.LocalityTab.Location = new System.Drawing.Point(179, 72);
             this.LocalityTab.Name = "LocalityTab";
             this.LocalityTab.SelectedIndex = 0;
-            this.LocalityTab.Size = new System.Drawing.Size(950, 538);
+            this.LocalityTab.Size = new System.Drawing.Size(950, 507);
             this.LocalityTab.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.LocalityTab.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.LocalityTab.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -330,7 +330,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(942, 490);
+            this.tabPage2.Size = new System.Drawing.Size(942, 459);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Населенный пункт";
             // 
@@ -372,7 +372,7 @@
             this.LocalityDataGrid.RowHeadersVisible = false;
             this.LocalityDataGrid.RowHeadersWidth = 51;
             this.LocalityDataGrid.RowTemplate.Height = 24;
-            this.LocalityDataGrid.Size = new System.Drawing.Size(552, 484);
+            this.LocalityDataGrid.Size = new System.Drawing.Size(552, 453);
             this.LocalityDataGrid.TabIndex = 3;
             this.LocalityDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.LocalityDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -440,7 +440,7 @@
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel5.Location = new System.Drawing.Point(555, 3);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(384, 484);
+            this.guna2Panel5.Size = new System.Drawing.Size(384, 453);
             this.guna2Panel5.TabIndex = 2;
             this.guna2Panel5.Visible = false;
             // 
@@ -529,7 +529,7 @@
             this.guna2Button16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Location = new System.Drawing.Point(191, 436);
+            this.guna2Button16.Location = new System.Drawing.Point(191, 405);
             this.guna2Button16.Name = "guna2Button16";
             this.guna2Button16.Size = new System.Drawing.Size(161, 43);
             this.guna2Button16.TabIndex = 46;
@@ -547,7 +547,7 @@
             this.AddLocalityButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddLocalityButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.AddLocalityButton.ForeColor = System.Drawing.Color.White;
-            this.AddLocalityButton.Location = new System.Drawing.Point(39, 436);
+            this.AddLocalityButton.Location = new System.Drawing.Point(39, 405);
             this.AddLocalityButton.Name = "AddLocalityButton";
             this.AddLocalityButton.Size = new System.Drawing.Size(146, 43);
             this.AddLocalityButton.TabIndex = 45;
@@ -1202,15 +1202,16 @@
             // разработчикиToolStripMenuItem
             // 
             this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
-            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.разработчикиToolStripMenuItem.Text = "Разработчики";
             this.разработчикиToolStripMenuItem.Click += new System.EventHandler(this.разработчикиToolStripMenuItem_Click);
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
+            this.помощьToolStripMenuItem.Click += new System.EventHandler(this.помощьToolStripMenuItem_Click);
             // 
             // Locality
             // 

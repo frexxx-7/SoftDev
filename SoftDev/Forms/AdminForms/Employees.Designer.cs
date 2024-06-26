@@ -338,15 +338,16 @@
             // разработчикиToolStripMenuItem
             // 
             this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
-            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.разработчикиToolStripMenuItem.Text = "Разработчики";
             this.разработчикиToolStripMenuItem.Click += new System.EventHandler(this.разработчикиToolStripMenuItem_Click);
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
+            this.помощьToolStripMenuItem.Click += new System.EventHandler(this.помощьToolStripMenuItem_Click);
             // 
             // EmployeesTab
             // 
@@ -357,10 +358,10 @@
             this.EmployeesTab.Controls.Add(this.tabPage2);
             this.EmployeesTab.Controls.Add(this.tabPage3);
             this.EmployeesTab.ItemSize = new System.Drawing.Size(180, 40);
-            this.EmployeesTab.Location = new System.Drawing.Point(181, 40);
+            this.EmployeesTab.Location = new System.Drawing.Point(181, 31);
             this.EmployeesTab.Name = "EmployeesTab";
             this.EmployeesTab.SelectedIndex = 0;
-            this.EmployeesTab.Size = new System.Drawing.Size(979, 987);
+            this.EmployeesTab.Size = new System.Drawing.Size(979, 944);
             this.EmployeesTab.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.EmployeesTab.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.EmployeesTab.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -391,7 +392,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(971, 939);
+            this.tabPage1.Size = new System.Drawing.Size(971, 896);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Сотрудники";
             // 
@@ -425,7 +426,7 @@
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel3.Location = new System.Drawing.Point(584, 3);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(384, 933);
+            this.guna2Panel3.Size = new System.Drawing.Size(384, 890);
             this.guna2Panel3.TabIndex = 1;
             this.guna2Panel3.Visible = false;
             // 
@@ -440,7 +441,7 @@
             this.guna2Button15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button15.ForeColor = System.Drawing.Color.White;
-            this.guna2Button15.Location = new System.Drawing.Point(186, 876);
+            this.guna2Button15.Location = new System.Drawing.Point(186, 833);
             this.guna2Button15.Name = "guna2Button15";
             this.guna2Button15.Size = new System.Drawing.Size(161, 43);
             this.guna2Button15.TabIndex = 44;
@@ -803,7 +804,7 @@
             this.EmpAddButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.EmpAddButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.EmpAddButton.ForeColor = System.Drawing.Color.White;
-            this.EmpAddButton.Location = new System.Drawing.Point(34, 876);
+            this.EmpAddButton.Location = new System.Drawing.Point(34, 833);
             this.EmpAddButton.Name = "EmpAddButton";
             this.EmpAddButton.Size = new System.Drawing.Size(146, 43);
             this.EmpAddButton.TabIndex = 23;
@@ -860,7 +861,7 @@
             this.EmployeesDatagrid.RowHeadersVisible = false;
             this.EmployeesDatagrid.RowHeadersWidth = 51;
             this.EmployeesDatagrid.RowTemplate.Height = 24;
-            this.EmployeesDatagrid.Size = new System.Drawing.Size(965, 933);
+            this.EmployeesDatagrid.Size = new System.Drawing.Size(965, 890);
             this.EmployeesDatagrid.TabIndex = 0;
             this.EmployeesDatagrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.EmployeesDatagrid.ThemeStyle.AlternatingRowsStyle.Font = null;

@@ -393,6 +393,7 @@
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
+            this.помощьToolStripMenuItem.Click += new System.EventHandler(this.помощьToolStripMenuItem_Click);
             // 
             // RequestTab
             // 

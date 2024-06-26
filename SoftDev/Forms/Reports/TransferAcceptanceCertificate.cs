@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
 using System.IO;
 using SoftDev.Forms.AdminForms;
+using System.Diagnostics;
 
 namespace SoftDev.Forms.Reports
 {
@@ -269,6 +270,40 @@ namespace SoftDev.Forms.Reports
         {
             new ScrollSoftWare().Show();
             this.Close();
+        }
+
+        private void разработчикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Developers().Show();
+        }
+
+        private void помощьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string sourceFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Poyasnitelnaya_zapiska.docx");
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                FileName = "Руководство пользователя.docx",
+                Filter = "Word Document (*.docx)|*.docx",
+                Title = "Сохранить как"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string destinationFilePath = saveFileDialog.FileName;
+
+                try
+                {
+                    File.Copy(sourceFilePath, destinationFilePath, true);
+                    MessageBox.Show("Файл успешно сохранен!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Process.Start(new ProcessStartInfo(destinationFilePath) { UseShellExecute = true });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Произошла ошибка при копировании файла: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

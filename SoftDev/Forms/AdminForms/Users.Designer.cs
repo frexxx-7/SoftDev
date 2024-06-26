@@ -276,7 +276,7 @@
             this.UsersTab.Location = new System.Drawing.Point(176, 75);
             this.UsersTab.Name = "UsersTab";
             this.UsersTab.SelectedIndex = 0;
-            this.UsersTab.Size = new System.Drawing.Size(728, 537);
+            this.UsersTab.Size = new System.Drawing.Size(728, 503);
             this.UsersTab.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.UsersTab.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.UsersTab.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -306,7 +306,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(720, 489);
+            this.tabPage2.Size = new System.Drawing.Size(720, 455);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Пользователи";
             // 
@@ -348,7 +348,7 @@
             this.UsersDataGrid.RowHeadersVisible = false;
             this.UsersDataGrid.RowHeadersWidth = 51;
             this.UsersDataGrid.RowTemplate.Height = 24;
-            this.UsersDataGrid.Size = new System.Drawing.Size(330, 483);
+            this.UsersDataGrid.Size = new System.Drawing.Size(330, 449);
             this.UsersDataGrid.TabIndex = 3;
             this.UsersDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.UsersDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -415,7 +415,7 @@
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel5.Location = new System.Drawing.Point(333, 3);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(384, 483);
+            this.guna2Panel5.Size = new System.Drawing.Size(384, 449);
             this.guna2Panel5.TabIndex = 2;
             this.guna2Panel5.Visible = false;
             // 
@@ -500,7 +500,7 @@
             this.guna2Button16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
-            this.guna2Button16.Location = new System.Drawing.Point(191, 435);
+            this.guna2Button16.Location = new System.Drawing.Point(191, 401);
             this.guna2Button16.Name = "guna2Button16";
             this.guna2Button16.Size = new System.Drawing.Size(161, 43);
             this.guna2Button16.TabIndex = 46;
@@ -518,7 +518,7 @@
             this.AddUserButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddUserButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.AddUserButton.ForeColor = System.Drawing.Color.White;
-            this.AddUserButton.Location = new System.Drawing.Point(39, 435);
+            this.AddUserButton.Location = new System.Drawing.Point(39, 401);
             this.AddUserButton.Name = "AddUserButton";
             this.AddUserButton.Size = new System.Drawing.Size(146, 43);
             this.AddUserButton.TabIndex = 45;
@@ -850,14 +850,14 @@
             // разработчикиToolStripMenuItem
             // 
             this.разработчикиToolStripMenuItem.Name = "разработчикиToolStripMenuItem";
-            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.разработчикиToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.разработчикиToolStripMenuItem.Text = "Разработчики";
             this.разработчикиToolStripMenuItem.Click += new System.EventHandler(this.разработчикиToolStripMenuItem_Click);
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
             this.помощьToolStripMenuItem.Click += new System.EventHandler(this.помощьToolStripMenuItem_Click);
             // 
